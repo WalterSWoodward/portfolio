@@ -1,0 +1,39 @@
+.portfolio {
+  padding: 70px 0px 5% 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: whitesmoke;
+  background: rgba(0,0,0,0.5);
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url("https://res.cloudinary.com/pacmankana/image/upload/v1542765015/portfolio%20website/portfolio_cards/natural-paper.png");
+  /* background-image: url("https://res.cloudinary.com/pacmankana/image/upload/v1542344456/portfolio%20website/portfolio_cards/black_paper.png"); */
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  .portfolio {
+    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1542765015/portfolio%20website/portfolio_cards/natural-paper.png');
+  }
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */
+  .portfolio {
+    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1542765015/portfolio%20website/portfolio_cards/natural-paper.webp'), ;
+  }
+}
+
+@media (max-width: 768px) {
+
+.portfolio {
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  align-content: none;
+}
+}

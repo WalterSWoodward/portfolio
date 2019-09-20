@@ -1,0 +1,14 @@
+// sass --watch ./src/scss/main.scss:./src/css/index.css --style compressed
+// Base
+@import "base/normalize";
+
+// Component
+
+@import "component/home";
+@import "component/navbar";
+@import "component/about";
+@import "component/projects";
+@import "component/card";
+@import "component/blog";
+@import "component/contact_links";
+@import "component/footer";

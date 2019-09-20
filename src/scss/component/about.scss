@@ -1,0 +1,202 @@
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  padding: 70px 0px 0px 0px;
+  font-size: 1rem;
+}
+
+.box1 {
+  color: black;
+  text-align: center;
+  background-size: cover;
+  height: 700px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices -- cuz webp doesn't work on iOS*/
+  .box1 {
+    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.png');
+    // JPEGmini
+    // background-image: url('https://res.cloudinary.com/pacmankana/image/upload/s--rO6i0vPJ--/q_jpegmini/v1542311813/portfolio%20website/about/fiji_sunset_background.jpg');
+  }
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */
+  .box1 {
+    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.webp');
+  }
+}
+
+#box1_text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+  animation-name: textFadeIn;
+  animation-duration: 4s;
+}
+
+.box1_name {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.box1_description {
+  margin-bottom: 20px;
+  // animation-name: textFadeIn;
+  // animation-duration: 4s;
+}
+.box1_link1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 40px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.box1_link1:hover {
+  padding: 5px 0px;
+  font-size: 1.6rem;
+}
+.box1_text_link1:hover {
+  margin: 0;
+  padding: 0;
+}
+
+.box1_link2 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 40px;
+  line-height: 1.7;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  transition: all 0.5s ease;
+}
+.box1_link2:hover{
+  padding: 5px 0px;
+  font-size: 1.6rem;
+}
+.box1_text_link2:hover {
+  margin: 0;
+  padding: 0;
+}
+
+.box1_link3 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 40px;
+  line-height: 1.7;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  transition: all 0.5s ease;
+}
+.box1_link3:hover{
+  padding: 5px 0px;
+  font-size: 1.6rem;
+}
+.box1_text_link3:hover {
+  margin: 0;
+  padding: 0;
+}
+
+.box2 {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 70px 30px 60px 30px;
+  text-align: center;
+}
+.box2_img {
+  margin: 10px 5%;
+  width: 45%;
+  /* alters images shape to circle */
+  border-radius: 100%;
+  /* wrap text around circular shape of image */
+  /* see more here: https://www.html5rocks.com/en/tutorials/shapes/getting-started/ */
+  shape-outside: circle(50%);
+  float: left;
+}
+#box2_here {
+  color: orange;
+  font-weight: bold;
+}
+.box3 {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 30px 60px 30px;
+  text-align: center;
+}
+.box3_img {
+  width: 45%;
+  border-radius: 100%;
+  margin: 10px 5%;
+  /* wrap text around circular shape of image */
+  shape-outside: circle(50%);
+  float: right;
+}
+.box4 {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 30px 60px 30px;
+  text-align: center;
+}
+.box4_img {
+  width: 45%;
+  border-radius: 100%;
+  margin: 10px 5%;
+  /* wrap text around circular shape of image */
+  shape-outside: circle(50%);
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .about {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .box2,
+  .box3,
+  .box4 {
+    text-align: center;
+  }
+  .box2_img,
+  .box3_img,
+  .box4_img {
+    width: 90%;
+    margin-bottom: 30px;
+    shape-outside: none;
+    float: none;
+  }
+}
+
+@media (max-width: 515px) {
+  .box1_name {
+    font-size: 2.7rem;
+  }
+  .box1_icon_text {
+    display: none;
+  }
+}
