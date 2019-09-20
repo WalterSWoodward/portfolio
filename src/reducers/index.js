@@ -19,7 +19,7 @@ const initialState = {
       title: "Wizard Sizer",
       languages:"WordPress, PHP, SQL, JavaScript",
       text: "A highly interactive wheelchair sizing application which I fixed, rebuilt, and refactored for Walkin' Pets",
-      deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/#contactdiv",
+      deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink
     },
     "exercise_tracker": {
