@@ -153,11 +153,7 @@ class About extends React.PureComponent {
             coding practices at scale and to avoid spending excessive amounts of time debugging. While I recognize 
             that many of the options out there are 
             complex, I believe that it is well-worth establishing ground rules for how things should 
-            be coded. Although I have worked on projects that don't use version control, I strongly 
-            prefer to use it. I'm not particular about 
-            one project management methodology over another, but I think they generally help 
-            keep the ball rolling and contribute to a more streamlined and efficient workflow. 
-            I am looking to transition into AngularJS as my primary JS framework, and am working 
+            be coded. I am looking to transition into AngularJS as my primary JS framework, and am working 
             on a personal project now to show off my skills in that area. That said, I am not strongly tied to 
             any one language or framework, and relish the opportunity to learn whilest providing for my family. 
             If you'd like to contact me, please use the<a
@@ -166,7 +162,7 @@ class About extends React.PureComponent {
                 class='link_to_contact_form'
               >
                 <b id='box2_here'> contact form</b>
-              </a> at the bottom of this page. Thanks, - Walter
+              </a> at the bottom of this page. Thanks!
           </div>
         </div>
       </Fragment>
