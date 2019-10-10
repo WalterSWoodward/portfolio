@@ -31,19 +31,19 @@
   }
 }
 
-@supports not (-webkit-overflow-scrolling: touch) {
-  /* CSS for other than iOS devices */
-  .box1 {
-    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.webp');
-  }
-}
-
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
     /* CSS for other than Safari devices */
     .box1 {
       background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.png');
     }
 } 
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */
+  .box1 {
+    background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.webp');
+  }
+}
 
 #box1_text {
   box-sizing: border-box;
