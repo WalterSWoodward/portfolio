@@ -28,19 +28,13 @@ class About extends React.PureComponent {
             <div
               id='fade_wrapper'
               style={{
-                background: this.props.backgroundColor /* Old browsers */,
-                background:
-                  '-moz-linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* FF3.6-15 */,
-                background:
-                  '-webkit-linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* Chrome10-25,Safari5.1-6 */,
-                background:
-                  'linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */,
+                background: this.props.backgroundColor || '-moz-linear-gradient(to top, ' +
+                this.props.backgroundColor +
+                ' 0%, white 100%)' /* FF3.6-15 */ || '-webkit-linear-gradient(to top, ' +
+                this.props.backgroundColor +
+                ' 0%, white 100%)' /* Chrome10-25,Safari5.1-6 */ || 'linear-gradient(to top, ' +
+                this.props.backgroundColor +
+                ' 0%, white 100%)' /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */,
                 filter:
                   "progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 )" /* IE6-9 */,
                 opacity: 0.9
@@ -159,7 +153,7 @@ class About extends React.PureComponent {
             If you'd like to contact me, please use the<a
                 href='https://walterswoodward.netlify.com/#contact'
                 aria-label='Link to Contact Form'
-                class='link_to_contact_form'
+                className='link_to_contact_form'
               >
                 <b id='box2_here'> contact form</b>
               </a> at the bottom of this page. Thanks!
