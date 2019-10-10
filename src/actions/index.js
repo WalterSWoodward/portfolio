@@ -2,7 +2,6 @@ export const ERROR = 'ERROR';
 export const CHANGE_BACKGROUND = 'CHANGE_BACKGROUND';
 export const TOGGLE_DROP_DOWN = 'TOGGLE_DROP_DOWN';
 export const UPDATE_LOAD_OVERLAY = 'UPDATE_LOAD_OVERLAY';
-export const CHECK_DEVICE = 'CHECK_DEVICE';
 
 // Local URL:
 // const URL = "http://localhost:5000/api";
@@ -20,9 +19,4 @@ export const toggleDropDown = () => dispatch => {
 export const updateLoadOverlay = (styles) => dispatch => {
   console.log('updateLoadOverlay triggered!');
   dispatch({ type: UPDATE_LOAD_OVERLAY, styles: styles });
-};
-
-export const checkDevice = () => dispatch => {
-  console.log('checkDevice triggered!');
-  dispatch({ type: CHECK_DEVICE });
 };

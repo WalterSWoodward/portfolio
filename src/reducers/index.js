@@ -2,8 +2,7 @@ import {
   ERROR,
   CHANGE_BACKGROUND,
   UPDATE_LOAD_OVERLAY,
-  TOGGLE_DROP_DOWN,
-  CHECK_DEVICE
+  TOGGLE_DROP_DOWN
 } from "../actions";
 import {
   // faCode,
@@ -211,11 +210,6 @@ const initialState = {
     height: '100%',
     background: 'black',
   },
-  checkDevice:(function () {
-    var iOS =
-    /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    return iOS;
-  })(),
   error: "default error message"
 };
 
@@ -232,9 +226,6 @@ export const Reducer = (state = initialState, action) => {
     case UPDATE_LOAD_OVERLAY:
       console.log("inside UPDATE_LOAD_OVERLAY:", action.styles);
       return { ...state, loadOverlay: action.styles };
-    case CHECK_DEVICE:
-      console.log("inside CHECK_DEVICE:", action.styles);
-      return { ...state, checkDevice: action.styles };
     case ERROR:
       return { ...state, error: action.errorMessage };
     default:

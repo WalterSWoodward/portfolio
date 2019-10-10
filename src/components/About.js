@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { updateLoadOverlay, checkDevice } from '../actions';
+import { updateLoadOverlay } from '../actions';
 import { Picture } from 'react-responsive-picture';
 
 class About extends React.PureComponent {
@@ -69,9 +69,7 @@ class About extends React.PureComponent {
               alt='walter profile'
               sources={[
                 {
-                  srcSet: this.props.checkDevice()
-                    ? 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.jpg'
-                    : 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp'
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.jpg'|| 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp'
                 }
               ]}
             />
@@ -129,9 +127,7 @@ class About extends React.PureComponent {
               alt='working together'
               sources={[
                 {
-                  srcSet: this.props.checkDevice()
-                    ? 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.jpg'
-                    : 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.webp'
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.jpg' || 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.webp'
                 }
               ]}
             />
@@ -160,12 +156,11 @@ class About extends React.PureComponent {
 const mapStateToProps = state => {
   return {
     backgroundColor: state.backgroundColor,
-    loadOverlay: state.loadOverlay,
-    checkDevice: state.checkDevice
+    loadOverlay: state.loadOverlay
   };
 };
 
 export default connect(
   mapStateToProps,
-  { updateLoadOverlay, checkDevice }
+  { updateLoadOverlay }
 )(About);
