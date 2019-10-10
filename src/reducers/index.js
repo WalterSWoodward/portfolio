@@ -1,8 +1,10 @@
-import { 
-  ERROR, 
-  CHANGE_BACKGROUND, 
+import {
+  ERROR,
+  CHANGE_BACKGROUND,
   UPDATE_LOAD_OVERLAY,
-  TOGGLE_DROP_DOWN } from "../actions";
+  TOGGLE_DROP_DOWN,
+  CHECK_DEVICE
+} from "../actions";
 import {
   // faCode,
   faLink,
@@ -17,7 +19,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1556986867/portfolio%20website/portfolio_cards/hpwizard.png",
       alt: "handicappedpets wizard sizer",
       title: "Wizard Sizer",
-      languages:"WordPress, PHP, SQL, JavaScript",
+      languages: "WordPress, PHP, SQL, JavaScript",
       text: "A highly interactive wheelchair sizing application which I fixed, rebuilt, and refactored for Walkin' Pets",
       deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink
@@ -27,7 +29,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.png",
       alt: "exercise tracker app",
       title: "Exercise Tracker",
-      languages:"React, Netlify, Heroku, Mongoose, Express",
+      languages: "React, Netlify, Heroku, Mongoose, Express",
       text: "A MERN stack app which facilitates daily data logging and tracking of user exercise routines",
       deploy_link: "https://relaxed-northcutt-3bf624.netlify.com/",
       deploy_link_icon: faLink,
@@ -38,10 +40,10 @@ const initialState = {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200393/portfolio%20website/portfolio_cards/url_shortener.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200393/portfolio%20website/portfolio_cards/url_shortener.png",
       alt: "url shortener app",
-      title:"URL Shortener",
+      title: "URL Shortener",
       languages: "React, Netlify, Heroku, Mongoose, Express",
-      text:"A MERN stack app which generates a new shortened URL given a valid URL address",
-      deploy_link:"https://vibrant-leakey-c7c0f0.netlify.com/",
+      text: "A MERN stack app which generates a new shortened URL given a valid URL address",
+      deploy_link: "https://vibrant-leakey-c7c0f0.netlify.com/",
       deploy_link_icon: faLink,
       code_link: "https://github.com/walterswoodward/url_shortener_frontend",
       code_link_icon: faGithub
@@ -50,11 +52,11 @@ const initialState = {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200392/portfolio%20website/portfolio_cards/react_calculator.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200392/portfolio%20website/portfolio_cards/react_calculator.png",
       alt: "react calculator screen shot",
-      title:"React Calculator",
-      languages:"React, Netlify",
-      text:"A clone of the macOS basic calculator that I built as the fourth project in the FCC Front End curriculum!",
+      title: "React Calculator",
+      languages: "React, Netlify",
+      text: "A clone of the macOS basic calculator that I built as the fourth project in the FCC Front End curriculum!",
       deploy_link: "https://ecstatic-noether-3a2a9e.netlify.com/",
-      deploy_link_icon:  faLink,
+      deploy_link_icon: faLink,
       code_link: "https://github.com/walterswoodward/react_calculator",
       code_link_icon: faGithub
     },
@@ -63,24 +65,24 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/drum_machine.png",
       url_link: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
       alt: "drum machine screen shot",
-      title:"Drum Machine",
-      languages:"React, Netlify",
-      text:"Make some beats with this simple drum machine I made as my third project in the FCC Front End curriculum!",
+      title: "Drum Machine",
+      languages: "React, Netlify",
+      text: "Make some beats with this simple drum machine I made as my third project in the FCC Front End curriculum!",
       deploy_link: "https://serene-mirzakhani-902b73.netlify.com/",
-      deploy_link_icon:  faLink,
-      code_link:"https://github.com/walterswoodward/react-drum-machine",
+      deploy_link_icon: faLink,
+      code_link: "https://github.com/walterswoodward/react-drum-machine",
       code_link_icon: faGithub
     },
     "markdown_previewer": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.png",
       alt: "markdown previewer screen shot",
-      title:"Markdown Previewer",
-      languages:"React, Javascript, Netlify",
-      text:"Instantly preview the output of your HTML markdown using this app! The second project I completed in FCC's Front End curriculum!",
+      title: "Markdown Previewer",
+      languages: "React, Javascript, Netlify",
+      text: "Instantly preview the output of your HTML markdown using this app! The second project I completed in FCC's Front End curriculum!",
       deploy_link: "https://awesome-stonebraker-052383.netlify.com/",
-      deploy_link_icon:  faLink,
-      code_link:"https://github.com/walterswoodward/react-markdown-previewer",
+      deploy_link_icon: faLink,
+      code_link: "https://github.com/walterswoodward/react-markdown-previewer",
       code_link_icon: faGithub
     },
     "tesla_tribute": {
@@ -90,32 +92,32 @@ const initialState = {
       title: "Tesla Tribute Page",
       languages: "Basic vanilla HTML and CSS",
       text: "This was my first FCC project! Just a simple static page with some information on the famous inventor, Nikola Tesla.",
-      deploy_link:"https://codepen.io/pacManKana/pen/oPabKx",
-      deploy_link_icon:  faCodepen
+      deploy_link: "https://codepen.io/pacManKana/pen/oPabKx",
+      deploy_link_icon: faCodepen
     },
 
     "freeCodeCamp": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/fcc_card_img.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/fcc_card_img.png",
-      alt:  "freeCodeCamp company logo",
+      alt: "freeCodeCamp company logo",
       title: "freeCodeCamp",
-      languages:"Express, MongoDB",
+      languages: "Express, MongoDB",
       text: "FCC has been very helpful in learning some of the fundamentals of web app development!",
-      deploy_link:"https://www.freecodecamp.org/walterswoodward",
-      deploy_link_icon:  faExternalLinkAlt
+      deploy_link: "https://www.freecodecamp.org/walterswoodward",
+      deploy_link_icon: faExternalLinkAlt
     },
     "codewars": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/codewars.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/codewars.png",
-      alt:  "code wars company logo",
+      alt: "code wars company logo",
       title: "Codewars",
-      languages:"Javascript",
+      languages: "Javascript",
       text: "Codewars has been very important in transitioning me from a beginner to an intermediate javascript coder.",
       deploy_link: "https://www.codewars.com/users/pacManKana",
-      deploy_link_icon:  faExternalLinkAlt
+      deploy_link_icon: faExternalLinkAlt
     }
     // OLDER PROJECTS -- START
-        // "quote_machine": {
+    // "quote_machine": {
     //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200391/portfolio%20website/portfolio_cards/quote_machine.webp",
     //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200391/portfolio%20website/portfolio_cards/quote_machine.png",
     //   alt: "react redux quote machine",
@@ -194,21 +196,26 @@ const initialState = {
     // },
     // OLDER PROJECTS -- END
   },
-  backgroundColor: (function(){
+  backgroundColor: (function () {
     const HUE = Math.floor(Math.random() * 360);
-      const SAT = 70;
-      const LIGHT = 70;
-      const newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      return newColor
+    const SAT = 70;
+    const LIGHT = 70;
+    const newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
+    return newColor
   })(),
   dropDownOpen: false,
   loadOverlay: {
-    zIndex: 2000, 
-    position: 'absolute', 
+    zIndex: 2000,
+    position: 'absolute',
     width: '100%',
-    height: '100%', 
+    height: '100%',
     background: 'black',
   },
+  checkDevice:(function () {
+    var iOS =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    return iOS;
+  })(),
   error: "default error message"
 };
 
@@ -224,7 +231,10 @@ export const Reducer = (state = initialState, action) => {
       return { ...state, dropDownOpen: !state.dropDownOpen };
     case UPDATE_LOAD_OVERLAY:
       console.log("inside UPDATE_LOAD_OVERLAY:", action.styles);
-      return { ...state, loadOverlay: action.styles};
+      return { ...state, loadOverlay: action.styles };
+    case CHECK_DEVICE:
+      console.log("inside CHECK_DEVICE:", action.styles);
+      return { ...state, checkDevice: action.styles };
     case ERROR:
       return { ...state, error: action.errorMessage };
     default:
