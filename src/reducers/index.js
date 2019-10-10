@@ -1,7 +1,7 @@
 import {
   ERROR,
   CHANGE_BACKGROUND,
-  UPDATE_LOAD_OVERLAY,
+  TOGGLE_OVERLAY,
   TOGGLE_DROP_DOWN
 } from "../actions";
 import {
@@ -10,6 +10,7 @@ import {
   faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
+// import { blockStatement } from "@babel/types";
 
 const initialState = {
   projects: {
@@ -195,15 +196,11 @@ const initialState = {
     // },
     // OLDER PROJECTS -- END
   },
-  backgroundColor: (function () {
-    const HUE = Math.floor(Math.random() * 360);
-    const SAT = 70;
-    const LIGHT = 70;
-    const newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-    return newColor
-  })(),
+  backgroundColor: '',
+  linearGradient:'',
   dropDownOpen: false,
   loadOverlay: {
+    display: 'block',
     zIndex: 2000,
     position: 'absolute',
     width: '100%',
@@ -216,16 +213,26 @@ const initialState = {
 export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_BACKGROUND:
-      const HUE = Math.floor(Math.random() * 360);
+      const HUE = Math.floor(Math.random() * 230);
       const SAT = 70;
       const LIGHT = 70;
-      const newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      return { ...state, backgroundColor: newColor };
+      let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
+      let newLinearGradient = 'linear-gradient(to top, ' + newColor + ' 0%, white 100%)';
+      return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor };
     case TOGGLE_DROP_DOWN:
+
       return { ...state, dropDownOpen: !state.dropDownOpen };
-    case UPDATE_LOAD_OVERLAY:
-      console.log("inside UPDATE_LOAD_OVERLAY:", action.styles);
-      return { ...state, loadOverlay: action.styles };
+    case TOGGLE_OVERLAY:
+      let display = state.loadOverlay.display === 'block';
+      let newDisplay = '';
+      display ? newDisplay = 'none' : newDisplay = 'block';
+      return {
+        ...state,
+        loadOverlay: {
+          ...state.loadOverlay,
+          display: newDisplay
+        }
+      }
     case ERROR:
       return { ...state, error: action.errorMessage };
     default:

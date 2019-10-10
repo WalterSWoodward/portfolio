@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { updateLoadOverlay } from '../actions';
+import { toggleOverlay } from '../actions';
 import { Picture } from 'react-responsive-picture';
 
 class About extends React.PureComponent {
   componentDidMount() {
-    this.props.updateLoadOverlay({
-      display: 'none'
-    });
+    this.props.toggleOverlay();
   }
 
   render() {
@@ -17,21 +15,12 @@ class About extends React.PureComponent {
         <div
           id='about'
           className='about'
-          style={{ backgroundColor: this.props.backgroundColor }}
         >
           <div className='box1'>
             <div
               id='fade_wrapper'
               style={{
-                background: this.props.backgroundColor || '-moz-linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* FF3.6-15 */ || '-webkit-linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* Chrome10-25,Safari5.1-6 */ || 'linear-gradient(to top, ' +
-                  this.props.backgroundColor +
-                  ' 0%, white 100%)' /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */,
-                filter:
-                  "progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 )" /* IE6-9 */,
+                background: this.props.linearGradient,
                 opacity: 0.9
               }}
             >
@@ -69,7 +58,7 @@ class About extends React.PureComponent {
               alt='walter profile'
               sources={[
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.jpg'|| 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp'
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.jpg' || 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp'
                 }
               ]}
             />
@@ -156,11 +145,12 @@ class About extends React.PureComponent {
 const mapStateToProps = state => {
   return {
     backgroundColor: state.backgroundColor,
-    loadOverlay: state.loadOverlay
+    loadOverlay: state.loadOverlay,
+    linearGradient: state.linearGradient
   };
 };
 
 export default connect(
   mapStateToProps,
-  { updateLoadOverlay }
+  { toggleOverlay }
 )(About);

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { changeBackground, toggleDropDown } from '../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserAstronaut, faBrain, faHandshake, faGlobeAsia} from '@fortawesome/free-solid-svg-icons';
+import { faUserAstronaut, faBrain, faHandshake, faGlobeAsia, faPalette} from '@fortawesome/free-solid-svg-icons';
 const bodyScrollLock = require('body-scroll-lock');
 
 
@@ -42,6 +42,10 @@ class NavBar extends Component {
       </Fragment>
     );
   };
+
+  componentDidMount() {
+    this.props.changeBackground();
+  }
 
   renderMenu = () => {
     return (
@@ -110,7 +114,7 @@ class NavBar extends Component {
             Contact
           </div>
         </a>
-        {/* <a
+        <a
           id='splash'
           href='#splash'
           onClick={this.changeColor}
@@ -127,7 +131,7 @@ class NavBar extends Component {
           <div id='splash-icon_text' className='icon_text'>
             Splash
           </div>
-        </a> */}
+        </a>
       </Fragment>
     );
   };
