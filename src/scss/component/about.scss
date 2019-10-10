@@ -38,6 +38,13 @@
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* CSS for other than Safari devices */
+    .box1 {
+      background-image: url('https://res.cloudinary.com/pacmankana/image/upload/v1553922841/portfolio%20website/about/fiji_sunset_background_fit.png');
+    }
+} 
+
 #box1_text {
   box-sizing: border-box;
   display: flex;

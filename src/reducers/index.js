@@ -218,6 +218,12 @@ export const Reducer = (state = initialState, action) => {
       const LIGHT = 70;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
       let newLinearGradient = 'linear-gradient(to top, ' + newColor + ' 0%, white 100%)';
+//       background: #1e5799; /* Old browsers */
+// background: -moz-linear-gradient(top,  100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(top,  100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to bottom,  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor };
     case TOGGLE_DROP_DOWN:
 

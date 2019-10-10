@@ -4,10 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Picture } from 'react-responsive-picture';
 
 class ProjectCards extends Component {
-  checkDevice = () => {
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    return iOS;
-  }
   createCards = () => {
     let projects = this.props.projects;
     let cardsList = Object.keys(this.props.projects).map((card, index) => (
@@ -21,9 +17,7 @@ class ProjectCards extends Component {
           alt={projects[card].alt}
           sources={[
             {
-              srcSet: this.checkDevice()
-                ? projects[card].alt_image_url
-                : projects[card].image_url,
+              srcSet:  projects[card].alt_image_url || projects[card].image_url,
             }
           ]}
         />
