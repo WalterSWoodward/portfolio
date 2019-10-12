@@ -3,9 +3,6 @@ export const CHANGE_BACKGROUND = 'CHANGE_BACKGROUND';
 export const TOGGLE_DROP_DOWN = 'TOGGLE_DROP_DOWN';
 export const TOGGLE_OVERLAY = 'TOGGLE_OVERLAY';
 
-// Local URL:
-// const URL = "http://localhost:5000/api";
-
 export const changeBackground = newColor => dispatch => {
   dispatch({ type: CHANGE_BACKGROUND, action: newColor });
 };
