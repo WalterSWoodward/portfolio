@@ -36,7 +36,9 @@ class ContactLinks extends Component {
             method='POST'
             style={{ backgroundColor: this.props.backgroundColor }}
           >
-            <div className='contact_form'>
+            <div className='contact_form' style={{
+              background: this.props.darkerBackgroundColor
+            }}>
               <div className='contact_form_top'>
                 <div
                   id='contact_name_field'
@@ -171,7 +173,7 @@ class ContactLinks extends Component {
 }
 
 function mapStateToProps(state) {
-  return { backgroundColor: state.backgroundColor };
+  return { backgroundColor: state.backgroundColor, darkerBackgroundColor: state.darkerBackgroundColor };
 }
 
 export default connect(mapStateToProps)(ContactLinks);
