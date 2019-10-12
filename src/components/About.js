@@ -52,7 +52,11 @@ class About extends React.PureComponent {
               </div>
             </div>
           </div>
-          <div id='journey' className='box2'>
+          <div id='journey'
+            className='box2'
+            style={{
+              background: this.props.darkerBackgroundColor
+            }}>
             <Picture
               className='box2_img'
               alt='walter profile'
@@ -90,7 +94,10 @@ class About extends React.PureComponent {
             bootcamp (Lambda School).
             </p>
           </div>
-          <div className='box3'>
+          <div className='box3'
+            style={{
+              background: this.props.darkerBackgroundColor
+            }}>
             <Picture
               className='box3_img'
               alt='computer desk with coffee'
@@ -120,7 +127,9 @@ class About extends React.PureComponent {
            etc.). I am happy to say that working full-time as a developer has
            only deepened my love of coding.
           </div>
-          <div className='box4'>
+          <div className='box4' style={{
+              background: this.props.darkerBackgroundColor
+            }}>
             <Picture
               className='box4_img'
               alt='working together'
@@ -133,7 +142,7 @@ class About extends React.PureComponent {
                   srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.png',
                   type: "image/png"
                 }
-          
+
               ]}
             />
             My experience as a javascript developer has given me a real appreciation for
@@ -162,7 +171,8 @@ const mapStateToProps = state => {
   return {
     backgroundColor: state.backgroundColor,
     loadOverlay: state.loadOverlay,
-    linearGradient: state.linearGradient
+    linearGradient: state.linearGradient,
+    darkerBackgroundColor: state.darkerBackgroundColor
   };
 };
 
