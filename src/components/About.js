@@ -59,7 +59,11 @@ class About extends React.PureComponent {
               sources={[
                 {
                   srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp',
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.png'
+                  type: "image/webp"
+                },
+                {
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.png',
+                  type: "image/png"
                 }
               ]}
             />
@@ -93,7 +97,11 @@ class About extends React.PureComponent {
               sources={[
                 {
                   srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923321/portfolio%20website/about/dream_fit.webp',
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923321/portfolio%20website/about/dream_fit.png'
+                  type: "image/webp"
+                },
+                {
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923321/portfolio%20website/about/dream_fit.png',
+                  type: "image/png"
                 }
               ]}
             />
@@ -119,8 +127,13 @@ class About extends React.PureComponent {
               sources={[
                 {
                   srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.webp',
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.png'
+                  type: "image/webp"
+                },
+                {
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.png',
+                  type: "image/png"
                 }
+          
               ]}
             />
             My experience as a javascript developer has given me a real appreciation for
