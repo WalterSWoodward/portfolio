@@ -5,12 +5,10 @@ import {
   TOGGLE_DROP_DOWN
 } from "../actions";
 import {
-  // faCode,
   faLink,
   faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
-// import { blockStatement } from "@babel/types";
 
 const initialState = {
   projects: {
