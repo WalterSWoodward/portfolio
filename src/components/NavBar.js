@@ -146,6 +146,7 @@ class NavBar extends Component {
       : enableBodyScroll(targetElement);
     return (
       <nav id='navigation'>
+        {/* Both mobile_view and desktop_view menus are loaded, but displayed/hidden via css */}
         <div className='mobile_view' onClick={this.handleClick}>
           <Fragment>{this.hamburgerMenu()} </Fragment>
           <div className={dropdown}>{this.renderMenu()}</div>
