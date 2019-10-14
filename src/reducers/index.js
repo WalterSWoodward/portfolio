@@ -213,10 +213,14 @@ export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_BACKGROUND:
       const HUE = Math.floor(Math.random() * 230);
+      const HUE_alt = Math.floor(Math.random() * 230);
+      const HUE_third = Math.floor(Math.random() * 230);
       const SAT = 70;
       const LIGHT = 70;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      let newLinearGradient = 'linear-gradient(to top, ' + newColor + ' 0%, white 100%)';
+      let altNewColor = `hsl(${HUE_alt}, ${SAT}%, ${LIGHT}%)`;
+      let thirdNewColor = `hsl(${HUE_third}, ${SAT}%, ${LIGHT}%)`;
+      let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, '+newColor+' 55%,'+thirdNewColor+' 100%)';
       let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
       
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
