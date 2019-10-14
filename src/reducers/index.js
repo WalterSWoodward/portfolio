@@ -213,8 +213,8 @@ export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_BACKGROUND:
       const HUE = Math.floor(Math.random() * 230);
-      const HUE_alt = Math.floor(Math.random() * 230);
-      const HUE_third = Math.floor(Math.random() * 230);
+      // const HUE_alt = Math.floor(Math.random() * 230);
+      // const HUE_third = Math.floor(Math.random() * 230);
       const SAT = 40;
       const LIGHT = 70;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
