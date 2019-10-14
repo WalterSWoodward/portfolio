@@ -218,8 +218,8 @@ export const Reducer = (state = initialState, action) => {
       const SAT = 70;
       const LIGHT = 70;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      let altNewColor = `hsl(${HUE_alt}, ${SAT}%, ${LIGHT}%)`;
-      let thirdNewColor = `hsl(${HUE_third}, ${SAT}%, ${LIGHT}%)`;
+      let altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
+      let thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
       let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, '+newColor+' 55%,'+thirdNewColor+' 100%)';
       let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
       
