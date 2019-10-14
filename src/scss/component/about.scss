@@ -22,6 +22,8 @@
   height: 700px;
 }
 
+
+// ALL BOX1 IMAGES REMOVED UNTIL UNDERLYING ISSUE WITH SLOW LOADING ON MOBILE IS DISCOVERED
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices -- cuz webp doesn't work on iOS*/
   .box1 {
