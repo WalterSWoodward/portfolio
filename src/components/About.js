@@ -93,13 +93,12 @@ class About extends React.PureComponent {
               academia, cultivating a broad spectrum of skills in music and
               sustainable agriculture in addition to serving in the 215th Army
               Band in Fall River, MA for six years, and completing a Master of
-              Arts in Theology from Gordon-Conwell Theological Seminary. In my final
-              semester at seminary it became clear to me that it was time that I put all that I had learned into practice as a working
-            professional. The decision to pursue web development was a
-            relatively easy one to make, because I was already a computer geek,
-            an avid problem solver, and an artist. I decided to make my way
+              Arts in Theology from Gordon-Conwell Theological Seminary. The decision to pursue web 
+              development was initially a practica on. I decided to make my way
             through some online coursework and a six month intensive coding
-            bootcamp (Lambda School).
+            bootcamp (Lambda School). I discovered through that process that I have an innate
+             aptitude and affinity towards the particular combination of problem solving, mathematics, 
+             and design, that web development requires.
             </p>
           </div>
           <div className='box3'
@@ -153,15 +152,7 @@ class About extends React.PureComponent {
 
               ]}
             />
-            My experience as a javascript developer has given me a real appreciation for
-            working within opinionated frameworks and strongly typed languages in order to facilitate consistent
-            coding practices at scale and to avoid spending excessive amounts of time debugging. While I recognize
-            that many of the options out there are
-            complex, I believe that it is well-worth establishing ground rules for how things should
-            be coded. I am looking to transition into AngularJS as my primary JS framework, and am working
-            on a personal project now to show off my skills in that area. That said, I am not strongly tied to
-            any one language or framework, and relish the opportunity to learn whilest providing for my family.
-            If you'd like to contact me, please use the<a
+            Currently, my wife and I are preparing to move to Portland, OR. <a
               href='https://walterswoodward.netlify.com/#contact'
               aria-label='Link to Contact Form'
               className='link_to_contact_form'
