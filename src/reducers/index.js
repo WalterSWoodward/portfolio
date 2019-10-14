@@ -215,7 +215,7 @@ export const Reducer = (state = initialState, action) => {
       const HUE = Math.floor(Math.random() * 230);
       const HUE_alt = Math.floor(Math.random() * 230);
       const HUE_third = Math.floor(Math.random() * 230);
-      const SAT = 70;
+      const SAT = 40;
       const LIGHT = 70;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
       let altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
