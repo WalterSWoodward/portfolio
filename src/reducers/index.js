@@ -22,6 +22,16 @@ const initialState = {
       deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink
     },
+    "Dynamic HTML Editor": {
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.png",
+      alt: "dynamic html editor",
+      title: "Dynamic HTML Editor",
+      languages:"HTML, CSS, JavaScript",
+      text: "An custom made HTML editor that I put together for some co-workers. It allows you to edit and duplicate HTML snippets.",
+      deploy_link: "https://dynamic-html-editor.netlify.com/",
+      deploy_link_icon: faLink
+    },
     "exercise_tracker": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.png",

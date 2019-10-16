@@ -123,8 +123,8 @@ class About extends React.PureComponent {
            full-time position as a Javascript Developer for The Atom Group in
            Portsmouth, NH. Most of my work involved working with large-scale
            JavaScript web applications, submitting solutions that added
-           enhanced functionality and clarity to an existing codebase. After
-           that first contract, I started a full-time position with Walkin'
+           enhanced functionality and clarity to an existing codebase. In March of 
+           this year I started a full-time position with Walkin'
            Pets as a JavaScript/WordPress Developer, a local business which
            provides wheelchairs and other medical supplies for pets in need. My
            core contribution to Walkin' Pets has been to fix, optimize, and maintain their
@@ -152,7 +152,7 @@ class About extends React.PureComponent {
 
               ]}
             />
-            Currently, my wife and I are preparing to move to Portland, OR. <a
+            Currently, my wife and I are preparing to move to Portland, OR. When I am not working with Walkin' Pets, I'm typically juggling my time between studying up on various js frameworks I am interested in (mostly React atm). If you'd like to reach out, feel free to use the <a
               href='https://walterswoodward.netlify.com/#contact'
               aria-label='Link to Contact Form'
               className='link_to_contact_form'
