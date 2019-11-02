@@ -161,7 +161,7 @@ class About extends React.PureComponent {
             or leveling up my skills in other languages I enjoy (PHP, mySQL, Bash, NGINX, Apache, MongoDB, Python) via 
             code challenges, small projects, and the occasional online course. Recently 
             I have decided to transition away from WordPress and focus on working within 
-            opensource tech stacks designed with developer in mind, 
+            opensource tech stacks designed with software developers in mind, 
             in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
             this far then I thank you for your time, and would direct you to browse the<a
               href='#portfolio'
