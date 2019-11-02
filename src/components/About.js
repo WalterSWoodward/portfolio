@@ -155,7 +155,7 @@ class About extends React.PureComponent {
             At the time of writing this, my wife and I are 
             getting settled after our trek across the U.S. from Boston to 
             Portland, OR, where we plan to settle for the indefinite future. When I 
-            am not working remotely with Walkin' Pets, I'm typically juggling my time between 
+            am not working remotely with Walkin' Pets, I am typically juggling my time between 
             studying up on various js frameworks I am interested in (mostly React atm, but 
             I am a big fan of Laravel!) 
             or leveling up my skills in other languages I enjoy (Python, PHP, mySQL) via 
