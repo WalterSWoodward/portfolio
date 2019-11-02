@@ -29,7 +29,7 @@ class ContactLinks extends Component {
   render() {
     return (
       <Fragment>
-        <div id='contact' className='contact'>
+        <div id='contact' className='contact' name='contact'>
           <form
             className='contact_form_container'
             action='https://formspree.io/swftkana@gmail.com'

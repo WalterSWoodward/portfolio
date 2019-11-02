@@ -163,14 +163,14 @@ class About extends React.PureComponent {
             I decided that I would like to focus in on working within opensource tech stacks, in 
             in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
             this far then I thank you for your time, and would direct you to browse the<a
-              href='https://walterswoodward.netlify.com/#portfolio'
+              href='#portfolio'
               aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
             >
               <b class="box2_internal_links"> portfolio </b>
             </a>  
              section below. If you'd like to reach out, feel free to use the <a
-              href='https://walterswoodward.netlify.com/#contact'
+              href='#contact'
               aria-label='Link to Contact Form'
               className='link_to_portfolio_section'
             >

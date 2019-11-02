@@ -6,7 +6,7 @@ class Projects extends Component {
   render() {
     return (
       <Fragment>
-        <div id="portfolio" className="portfolio">
+        <div id="portfolio" className="portfolio" name="portfolio">
           <ProjectCards />
           </div>
       </Fragment>
