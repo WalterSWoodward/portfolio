@@ -87,7 +87,7 @@ class About extends React.PureComponent {
                 aria-label='Portfolio Github Code here'
                 id='box2_here_container'
               >
-                <b id='box2_here'> Portfolio Website Code here</b>
+                <b class='box2_internal_links'> Portfolio Website Code here</b>
               </a>
               . A bit about me. I have spent a lot of time in
               academia, cultivating a broad spectrum of skills in music and
