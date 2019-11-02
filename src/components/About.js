@@ -156,19 +156,25 @@ class About extends React.PureComponent {
             getting settled after our trek across the U.S. from Boston to 
             Portland, OR, where we plan to settle for the indefinite future. When I 
             am not working remotely with Walkin' Pets, I am typically juggling my time between 
-            studying up on various js frameworks I am interested in (mostly React atm, but 
+            studying up on various JavaScript frameworks I am interested in (mostly React atm, but 
             I am a big fan of Laravel!) 
             or leveling up my skills in other languages I enjoy (PHP, mySQL, Bash, NGINX, Apache, MongoDB, Python) via 
             code challenges, small projects, and the occasional online course. Recently 
             I decided that I would like to focus in on working within opensource tech stacks, in 
             in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
-            this far then I thank you for your time, and would direct you to browse the portfolio 
-            section below. If you'd like to reach out, feel free to use the <a
-              href='https://walterswoodward.netlify.com/#contact'
-              aria-label='Link to Contact Form'
+            this far then I thank you for your time, and would direct you to browse the<a
+              href='https://walterswoodward.netlify.com/#portfolio'
+              aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
             >
-              <b id='box2_here'> contact form</b>
+              <b class="box2_internal_links"> portfolio </b>
+            </a>  
+             section below. If you'd like to reach out, feel free to use the <a
+              href='https://walterswoodward.netlify.com/#contact'
+              aria-label='Link to Contact Form'
+              className='link_to_portfolio_section'
+            >
+              <b class="box2_internal_links"> contact form</b>
             </a> at the bottom of this page. Thanks!
           </div>
         </div>
