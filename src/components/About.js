@@ -158,7 +158,7 @@ class About extends React.PureComponent {
             am not working remotely with Walkin' Pets, I am typically juggling my time between 
             studying up on various js frameworks I am interested in (mostly React atm, but 
             I am a big fan of Laravel!) 
-            or leveling up my skills in other languages I enjoy (Python, PHP, mySQL) via 
+            or leveling up my skills in other languages I enjoy (PHP, mySQL, bash, nginx) via 
             code challenges, small projects, and the occasional online course. Recently 
             I decided that I would like to focus in on working within opensource tech stacks, in 
             in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
