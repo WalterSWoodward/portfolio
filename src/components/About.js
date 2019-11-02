@@ -153,14 +153,15 @@ class About extends React.PureComponent {
               ]}
             />
             At the time of writing this, my wife and I are 
-            getting settled after our trek across the U.S. from Boston to 
+            getting settled after our trek across the U.S. from Boston, MA to 
             Portland, OR, where we plan to settle for the indefinite future. When I 
             am not working remotely with Walkin' Pets, I am typically juggling my time between 
             studying up on various JavaScript frameworks I am interested in (mostly React atm, but 
             I am a big fan of Laravel!) 
             or leveling up my skills in other languages I enjoy (PHP, mySQL, Bash, NGINX, Apache, MongoDB, Python) via 
             code challenges, small projects, and the occasional online course. Recently 
-            I decided that I would like to focus in on working within opensource tech stacks, in 
+            I have decided to transition away from WordPress and focus on working within 
+            opensource tech stacks designed with developer in mind, 
             in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
             this far then I thank you for your time, and would direct you to browse the<a
               href='#portfolio'
