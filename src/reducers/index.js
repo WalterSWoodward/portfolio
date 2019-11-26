@@ -58,7 +58,7 @@ const initialState = {
     },
     "calculator": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.png",
+      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/Cudv1UEp/pagespeed/react_calculator_c45b87b99f14da6103c6978465d9a7ad.png",
       alt: "react calculator screen shot",
       title: "React Calculator",
       languages: "React, Netlify",
