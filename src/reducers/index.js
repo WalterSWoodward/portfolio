@@ -24,7 +24,7 @@ const initialState = {
     },
     "dynamic_html_editor": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/MH31VGAi/pagespeed/dynamic_html_editor_da9eaaddf5911fad0a389bbf82914ba3.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.png",
       alt: "dynamic html editor",
       title: "HTML Editor",
       languages:"HTML, CSS, JavaScript, NodeJS",
@@ -34,7 +34,7 @@ const initialState = {
     },
     "exercise_tracker": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/hJhX12u6/pagespeed/exercise_tracker_52dd5ec76c7475565b1bf6c7ae592f8e.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.png",
       alt: "exercise tracker app",
       title: "Exercise Tracker",
       languages: "React, Netlify, Heroku, Mongoose, Express",
@@ -46,7 +46,7 @@ const initialState = {
     },
     "url_shortener": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/url_shortener.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/hJhX12u6/pagespeed/url_shortener_a93ffb430adcb0f2cb7c6c319af764fe.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/url_shortener.png",
       alt: "url shortener app",
       title: "URL Shortener",
       languages: "React, Netlify, Heroku, Mongoose, Express",
@@ -58,7 +58,7 @@ const initialState = {
     },
     "calculator": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/Cudv1UEp/pagespeed/react_calculator_c45b87b99f14da6103c6978465d9a7ad.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.png",
       alt: "react calculator screen shot",
       title: "React Calculator",
       languages: "React, Netlify",
@@ -70,7 +70,7 @@ const initialState = {
     },
     "drum_machine": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/MH31VGAi/pagespeed/drum_machine_68840aae8b0cb09124bac9c09df9ed80.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.png",
       url_link: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
       alt: "drum machine screen shot",
       title: "Drum Machine",
@@ -83,7 +83,7 @@ const initialState = {
     },
     "markdown_previewer": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.webp",
-      alt_image_url: "https://gtmetrix.com/reports/walterswoodward.netlify.com/MH31VGAi/pagespeed/markdown_previewer_85c0f536113ee1112461380cd6dfe63a.png",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.png",
       alt: "markdown previewer screen shot",
       title: "Markdown Previewer",
       languages: "React, Javascript, Netlify",
