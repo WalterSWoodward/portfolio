@@ -142,11 +142,11 @@ class About extends React.PureComponent {
               alt='working together'
               sources={[
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.webp',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575260134/portfolio%20website/about/JAMstack_wst.webp',
                   type: "image/webp"
                 },
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923307/portfolio%20website/about/JAMstack_fit.png',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575260134/portfolio%20website/about/JAMstack_wst.png',
                   type: "image/png"
                 }
 
