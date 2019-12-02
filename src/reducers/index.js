@@ -13,8 +13,8 @@ import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 const initialState = {
   projects: {
     "wizard": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1556986867/portfolio%20website/portfolio_cards/hpwizard.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1556986867/portfolio%20website/portfolio_cards/hpwizard.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/hpwizard_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/hpwizard_wst.png",
       alt: "handicappedpets wizard sizer",
       title: "Wizard Sizer",
       languages: "WordPress, PHP, SQL, JavaScript",
@@ -23,8 +23,8 @@ const initialState = {
       deploy_link_icon: faLink
     },
     "dynamic_html_editor": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1571257767/portfolio%20website/portfolio_cards/dynamic_html_editor.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/dynamic_html_editor_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/dynamic_html_editor_wst.png",
       alt: "dynamic html editor",
       title: "HTML Editor",
       languages:"HTML, CSS, JavaScript, NodeJS",
@@ -33,8 +33,8 @@ const initialState = {
       deploy_link_icon: faLink
     },
     "exercise_tracker": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/exercise_tracker.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/exercise_tracker_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/exercise_tracker_wst.png",
       alt: "exercise tracker app",
       title: "Exercise Tracker",
       languages: "React, Netlify, Heroku, Mongoose, Express",
@@ -57,8 +57,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "calculator": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/react_calculator.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/react_calculator_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/react_calculator_wst.png",
       alt: "react calculator screen shot",
       title: "React Calculator",
       languages: "React, Netlify",
@@ -69,8 +69,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "drum_machine": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/drum_machine_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/drum_machine_wst.png",
       url_link: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
       alt: "drum machine screen shot",
       title: "Drum Machine",
@@ -82,8 +82,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "markdown_previewer": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200389/portfolio%20website/portfolio_cards/markdown_previewer.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/markdown_previewer_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/markdown_previewer_wst.png",
       alt: "markdown previewer screen shot",
       title: "Markdown Previewer",
       languages: "React, Javascript, Netlify",
@@ -94,8 +94,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "tesla_tribute": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/tesla.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/tesla.jpg",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260627/portfolio%20website/portfolio_cards/tesla_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260627/portfolio%20website/portfolio_cards/tesla_wst.png",
       alt: "Tesla Making Lightening with his Tesla Coil",
       title: "Tesla Tribute Page",
       languages: "Basic vanilla HTML and CSS",
@@ -105,8 +105,8 @@ const initialState = {
     },
 
     "freeCodeCamp": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fcc_card_img.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fcc_card_img.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/fcc_card_img_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/fcc_card_img_wst.png",
       alt: "freeCodeCamp company logo",
       title: "freeCodeCamp",
       languages: "Express, MongoDB",
@@ -115,8 +115,8 @@ const initialState = {
       deploy_link_icon: faExternalLinkAlt
     },
     "codewars": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/codewars.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/codewars.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/codwars_wst.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/codwars_wst.png",
       alt: "code wars company logo",
       title: "Codewars",
       languages: "Javascript",
