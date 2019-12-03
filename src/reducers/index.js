@@ -33,8 +33,8 @@ const initialState = {
       deploy_link_icon: faLink
     },
     "exercise_tracker": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/exercise_tracker_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/exercise_tracker_wst.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/exercise_tracker_webp.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/exercise_tracker_png.png",
       alt: "exercise tracker app",
       title: "Exercise Tracker",
       languages: "React, Netlify, Heroku, Mongoose, Express",
@@ -45,8 +45,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "url_shortener": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/url_shortener.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200393/portfolio%20website/portfolio_cards/url_shortener.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_webp.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_png.png",
       alt: "url shortener app",
       title: "URL Shortener",
       languages: "React, Netlify, Heroku, Mongoose, Express",
@@ -57,8 +57,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "calculator": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/react_calculator_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/react_calculator_wst.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/drum_machine_webp.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/drum_machine_png.png",
       alt: "react calculator screen shot",
       title: "React Calculator",
       languages: "React, Netlify",
@@ -94,8 +94,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "tesla_tribute": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260627/portfolio%20website/portfolio_cards/tesla_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260627/portfolio%20website/portfolio_cards/tesla_wst.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/tesla_png.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/tesla_png.png",
       alt: "Tesla Making Lightening with his Tesla Coil",
       title: "Tesla Tribute Page",
       languages: "Basic vanilla HTML and CSS",
@@ -105,8 +105,8 @@ const initialState = {
     },
 
     "freeCodeCamp": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/fcc_card_img_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/fcc_card_img_wst.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/fcc_webp.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/fcc_png.png",
       alt: "freeCodeCamp company logo",
       title: "freeCodeCamp",
       languages: "Express, MongoDB",
