@@ -27,7 +27,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/dynamic_html_editor_wst.png",
       alt: "dynamic html editor",
       title: "HTML Editor",
-      languages:"HTML, CSS, JavaScript, NodeJS",
+      languages: "HTML, CSS, JavaScript, NodeJS",
       text: "A custom made HTML editor that I put together for some co-workers. It allows you to edit and duplicate HTML snippets.",
       deploy_link: "https://dynamic-html-editor.netlify.com/",
       deploy_link_icon: faLink
@@ -230,9 +230,9 @@ export const Reducer = (state = initialState, action) => {
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
       let altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
       let thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
-      let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, '+newColor+' 55%,'+thirdNewColor+' 100%)';
+      let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
       let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
-      
+
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
     case TOGGLE_DROP_DOWN:
 

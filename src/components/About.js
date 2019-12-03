@@ -110,11 +110,11 @@ class About extends React.PureComponent {
               alt='computer desk with coffee'
               sources={[
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923321/portfolio%20website/about/dream_fit.webp',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/dream_fit_webp.webp',
                   type: "image/webp"
                 },
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923321/portfolio%20website/about/dream_fit.png',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338984/portfolio%20website/about/dream_fit_png.png',
                   type: "image/png"
                 }
               ]}
@@ -142,11 +142,11 @@ class About extends React.PureComponent {
               alt='working together'
               sources={[
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575260134/portfolio%20website/about/JAMstack_wst.webp',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/JAMstack_webp.webp',
                   type: "image/webp"
                 },
                 {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575260134/portfolio%20website/about/JAMstack_wst.png',
+                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/JAMstack_png.png',
                   type: "image/png"
                 }
 
