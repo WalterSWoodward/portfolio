@@ -57,8 +57,8 @@ const initialState = {
       code_link_icon: faGithub
     },
     "calculator": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/drum_machine_webp.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/drum_machine_png.png",
+      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_webp.webp",
+      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_png.png",
       alt: "react calculator screen shot",
       title: "React Calculator",
       languages: "React, Netlify",
