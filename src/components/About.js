@@ -89,16 +89,19 @@ class About extends React.PureComponent {
               >
                 <b class='box2_internal_links'> Portfolio Website Code here</b>
               </a>
-              . A bit about me. I have spent a lot of time in
-              academia, cultivating a broad spectrum of skills in music and
-              sustainable agriculture in addition to serving in the 215th Army
-              Band in Fall River, MA for six years, and completing a Master of
-              Arts in Theology from Gordon-Conwell Theological Seminary. The decision to pursue web 
-              development was initially a practical one. I decided to make my way
-            through some online coursework and a six month intensive coding
-            bootcamp (Lambda School). I discovered through that process that I have an innate
-             aptitude and affinity towards the particular combination of problem solving, mathematics, 
-             and design, that web development requires.
+              . A bit about me. I started learning to program in January of 2018. 
+              I accepted my first offer for a full-time position as a Javascript Developer at The Atom Group in
+           Portsmouth, NH. Most of my work involved working with large-scale
+           JavaScript web applications, submitting solutions that added
+           enhanced functionality and clarity to an existing codebase. In March of 
+           2019 I accepted a position at Walkin'
+           Pets as a LAMP stack Developer, a local business which
+           provides wheelchairs and other medical supplies for pets in need. My
+           core contribution to Walkin' Pets has been to fix, optimize, and maintain their
+           custom sizing web app, referred to in-house as the "Wizard", which
+           allows users to calculate the correct wheelchair for their pet by
+           entering specific measurements (rear leg height, weight, breed
+           etc.).
             </p>
           </div>
           <div className='box3'
@@ -119,20 +122,7 @@ class About extends React.PureComponent {
                 }
               ]}
             />
-            On December 10th, 2018, I started my first
-           full-time position as a Javascript Developer for The Atom Group in
-           Portsmouth, NH. Most of my work involved working with large-scale
-           JavaScript web applications, submitting solutions that added
-           enhanced functionality and clarity to an existing codebase. In March of 
-           this year I started a full-time position with Walkin'
-           Pets as a JavaScript (+ WordPress/mySQL/PHP/bash) Developer, a local business which
-           provides wheelchairs and other medical supplies for pets in need. My
-           core contribution to Walkin' Pets has been to fix, optimize, and maintain their
-           custom sizing web app, referred to in-house as the "Wizard", which
-           allows users to calculate the correct wheelchair for their pet by
-           entering specific measurements (rear leg height, weight, breed
-           etc.). I am happy to say that working full-time as a developer has
-           only deepened my love of coding.
+            
           </div>
           <div className='box4' style={{
               background: this.props.darkerBackgroundColor
@@ -152,18 +142,10 @@ class About extends React.PureComponent {
 
               ]}
             />
-            At the time of writing this, my wife and I are 
-            getting settled after our trek across the U.S. from Boston, MA to 
-            Portland, OR, where we plan to settle for the indefinite future. When I 
-            am not working remotely with Walkin' Pets, I am typically juggling my time between 
-            studying up on various JavaScript frameworks I am interested in (mostly React atm, but 
-            I am a big fan of Laravel!) 
-            or leveling up my skills in other languages I enjoy (PHP, mySQL, Bash, NGINX, Apache, MongoDB, Python) via 
-            code challenges, small projects, and the occasional online course. Recently 
-            I have decided to transition away from WordPress and focus on working within 
-            opensource tech stacks designed with software developers in mind, 
-            in particular the LAMP/LEMP stack. At any rate, enough about me, if you've gotten 
-            this far then I thank you for your time, and would direct you to browse the<a
+            I've been programming for over two years now, and I'm happy to say that I still very much enjoy
+            honing my skills in this craft. As a software developer at Scan123, I mainly work
+            within the LEMP stack building, maintaining, and utlilizing libraries in various languages
+            to suit the company's needs. Check out my<a
               href='#portfolio'
               aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
@@ -176,7 +158,7 @@ class About extends React.PureComponent {
               className='link_to_portfolio_section'
             >
               <b class="box2_internal_links"> contact form</b>
-            </a> at the bottom of this page. Thanks!
+            </a> at the bottom of this page.
           </div>
         </div>
       </Fragment>
