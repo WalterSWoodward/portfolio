@@ -147,7 +147,9 @@ class About extends React.PureComponent {
 
               ]}
             />
-             Feel free to browse though my<a
+             Outside of work, I am thankful to God for the strength and will to maintain a healthy lifestyle with my wife 
+             here in Portland, OR. We enjoy the outdoors, our two cats, and striving to honor God through our thoughts 
+             and our actions. Feel free to browse through my<a
               href='#portfolio'
               aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
