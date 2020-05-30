@@ -121,9 +121,14 @@ class About extends React.PureComponent {
                   type: "image/png"
                 }
               ]}
-            />
-            
-          </div>
+            />I've been programming for over two years now, and I'm happy to say that I still very much enjoy
+            honing my skills in this craft. As a software developer at Scan123, I mainly work
+            within the LEMP stack building, maintaining, and utlilizing libraries in various languages
+            to suit the company's needs. We've integrated elements of DevOps and Agile Scrum Methodology 
+            because it helps us work together, establishes realistic expectations, and also helps us maintain 
+            metrics on progress. Despite the current state of the world (Covid19 etc.), we have managed so far 
+            to keep motivated and continue to improve our product for our customers.
+            </div>
           <div className='box4' style={{
               background: this.props.darkerBackgroundColor
             }}>
@@ -142,17 +147,14 @@ class About extends React.PureComponent {
 
               ]}
             />
-            I've been programming for over two years now, and I'm happy to say that I still very much enjoy
-            honing my skills in this craft. As a software developer at Scan123, I mainly work
-            within the LEMP stack building, maintaining, and utlilizing libraries in various languages
-            to suit the company's needs. Check out my<a
+             Feel free to browse though my<a
               href='#portfolio'
               aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
             >
               <b class="box2_internal_links"> portfolio </b>
             </a>  
-             section below. If you'd like to reach out, feel free to use the <a
+             section below. If you'd like to reach out, please use the <a
               href='#contact'
               aria-label='Link to Contact Form'
               className='link_to_portfolio_section'
