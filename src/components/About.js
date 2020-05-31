@@ -97,7 +97,7 @@ class About extends React.PureComponent {
            2019 I accepted a position at Walkin'
            Pets as a LAMP stack Developer, a local business which
            provides wheelchairs and other medical supplies for pets in need. My
-           core contribution to Walkin' Pets has been to fix, optimize, and maintain their
+           core contribution to Walkin' Pets was to fix, optimize, and maintain their
            custom sizing web app, referred to in-house as the "Wizard", which
            allows users to calculate the correct wheelchair for their pet by
            entering specific measurements (rear leg height, weight, breed
