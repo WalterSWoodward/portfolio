@@ -35,7 +35,7 @@ class ContactLinks extends Component {
             onSubmit={this.submitForm}
             className='contact_form_container'
             action='https://formspree.io/f/walter.sekope.woodward@gmail.com'
-            method='POST'
+            method="POST"
             style={{ backgroundColor: this.props.backgroundColor }}
           >
             <div className='contact_form' style={{
