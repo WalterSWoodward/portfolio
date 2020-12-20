@@ -11,7 +11,8 @@ class ContactLinks extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      status: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,6 +29,7 @@ class ContactLinks extends Component {
     e.preventDefault();
   }
   render() {
+    const { status } = this.state;
     return (
       <Fragment>
         <div id='contact' className='contact' name='contact'>
@@ -103,6 +105,8 @@ class ContactLinks extends Component {
                 />
               </div>
               <input id='contact_form_button' type='submit' value='Send' />
+              {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+              {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </div>
           </form>
 
@@ -174,6 +178,7 @@ class ContactLinks extends Component {
   }
 
   submitForm(ev) {
+    console.log('inside ');
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -182,6 +187,12 @@ class ContactLinks extends Component {
     xhr.setRequestHeader("Accept", "application/json");
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
     };
     xhr.send(data);
   }
