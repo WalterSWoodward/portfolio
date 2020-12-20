@@ -11,10 +11,12 @@ class ContactLinks extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      status: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.submitForm = this.submitForm.bind(this);
   }
 
   // Field could be 'name', 'email', or 'message'
@@ -27,6 +29,7 @@ class ContactLinks extends Component {
     e.preventDefault();
   }
   render() {
+    const { status } = this.state
     return (
       <Fragment>
         <div id='contact' className='contact' name='contact'>
@@ -103,6 +106,8 @@ class ContactLinks extends Component {
                 <input id='contact_form_button' type='submit' value='Send' />
               </div>
             </div>
+            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+            {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
 
           <div className='icon_links'>
