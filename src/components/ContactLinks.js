@@ -32,7 +32,7 @@ class ContactLinks extends Component {
         <div id='contact' className='contact' name='contact'>
           <form
             className='contact_form_container'
-            action='https://formspree.io/swftkana@gmail.com'
+            action='https://formspree.io/f/swftkana@gmail.com'
             method='POST'
             style={{ backgroundColor: this.props.backgroundColor }}
           >
