@@ -87,7 +87,7 @@ class About extends React.PureComponent {
                 aria-label='Portfolio Github Code here'
                 id='box2_here_container'
               >
-                <b class='box2_internal_links'> Portfolio Website Code here</b>
+                <b className='box2_internal_links'> Portfolio Website Code here</b>
               </a>
               . A bit about me. I started learning to program in January of 2018. 
               I accepted my first offer for a full-time position as a Javascript Developer at The Atom Group in
@@ -154,14 +154,14 @@ class About extends React.PureComponent {
               aria-label='Link to Portfolio Section'
               className='link_to_contact_form'
             >
-              <b class="box2_internal_links"> portfolio </b>
+              <b className="box2_internal_links"> portfolio </b>
             </a>  
              section below. If you'd like to reach out, please use the <a
               href='#contact'
               aria-label='Link to Contact Form'
               className='link_to_portfolio_section'
             >
-              <b class="box2_internal_links"> contact form</b>
+              <b className="box2_internal_links"> contact form</b>
             </a> at the bottom of this page.
           </div>
         </div>

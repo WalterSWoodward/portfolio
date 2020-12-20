@@ -104,8 +104,8 @@ class ContactLinks extends Component {
                   required
                 />
               </div>
-              <input id='contact_form_button' type='submit' value='Send' />
-              {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+              
+              {status === "SUCCESS" ? <p>Thanks!</p> : <input id='contact_form_button' type='submit' value='Send' />}
               {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </div>
           </form>
