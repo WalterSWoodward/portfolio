@@ -101,6 +101,7 @@ class ContactLinks extends Component {
                   style={{ outlineColor: this.props.backgroundColor }}
                   required
                 />
+                <input id='contact_form_button' type='submit' value='Send' />
               </div>
             </div>
           </form>
