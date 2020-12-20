@@ -103,11 +103,10 @@ class ContactLinks extends Component {
                   style={{ outlineColor: this.props.backgroundColor }}
                   required
                 />
-                <input id='contact_form_button' type='submit' value='Send' />
+                {status === "SUCCESS" ? <p>Thanks!</p> : <input id='contact_form_button' type='submit' value='Send' />}
+                {status === "ERROR" && <p>Ooops! There was an error.</p>}
               </div>
             </div>
-            {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-            {status === "ERROR" && <p>Ooops! There was an error.</p>}
           </form>
 
           <div className='icon_links'>
