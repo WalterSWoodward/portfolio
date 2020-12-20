@@ -31,6 +31,7 @@ class ContactLinks extends Component {
       <Fragment>
         <div id='contact' className='contact' name='contact'>
           <form
+            onSubmit={this.submitForm}
             className='contact_form_container'
             action='https://formspree.io/f/walter.sekope.woodward@gmail.com'
             method='POST'
@@ -169,6 +170,25 @@ class ContactLinks extends Component {
         </div>
       </Fragment>
     );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
   }
 }
 
