@@ -67,6 +67,8 @@ class About extends React.PureComponent {
                 href='https://github.com/walterswoodward/walterswoodward.github.io'
                 aria-label='Portfolio Github Code here'
                 id='box2_here_container'
+                target="_blank"
+                rel="noopener noreferrer" 
               >
                 <b className='box2_internal_links'> Portfolio Website Code here</b>
               </a>
