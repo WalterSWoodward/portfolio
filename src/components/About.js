@@ -13,6 +13,7 @@ class About extends React.PureComponent {
    
       <div
         id='fade_wrapper'
+        class="about__wrap"
         style={{
           background: this.props.linearGradient
         }}

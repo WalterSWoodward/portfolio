@@ -2,6 +2,9 @@
 // Base
 @import "base/normalize";
 
+// Utils
+@import "utils/variables.scss";
+
 // Component
 
 @import "component/index";
@@ -10,6 +13,5 @@
 @import "component/about";
 @import "component/projects";
 @import "component/card";
-@import "component/blog";
 @import "component/contact_links";
 @import "component/footer";

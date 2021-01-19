@@ -17,7 +17,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/hpwizard_wst.png",
       alt: "handicappedpets wizard sizer",
       title: "Wizard Sizer",
-      languages: "WordPress, PHP, SQL, JavaScript",
+      languages: "WordPress, PHP, mySQL, JavaScript",
       text: "A highly interactive wheelchair sizing application which I built for Walkin' Pets",
       deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink

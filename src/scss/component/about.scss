@@ -15,6 +15,10 @@
   font-size: 1rem;
 }
 
+#fade_wrapper.about__wrap {
+  border-radius: 0px 0px $border-radius $border-radius;
+}
+
 .box1 {
   color: black;
   text-align: center;
@@ -33,6 +37,7 @@
   animation-name: textFadeIn;
   animation-duration: 4s;
   color: whitesmoke;
+  border-radius: 0px $border-radius;
 }
 
 .box1_name {
