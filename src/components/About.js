@@ -22,13 +22,6 @@ class About extends React.PureComponent {
           <div className='box1_name'>WALTER WOODWARD</div>
           <div className='box1_description'>FULL STACK WEB DEVELOPER</div>
           <a
-            className='box1_link1'
-            href='#journey'
-            aria-label="Click here to learn more about Walter Woodward's story"
-          >
-            MY JOURNEY
-          </a>
-          <a
             className='box1_link2'
             href='#portfolio'
             aria-label="Click here to view Walter's current projects"
