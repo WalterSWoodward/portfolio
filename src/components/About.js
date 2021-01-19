@@ -14,8 +14,7 @@ class About extends React.PureComponent {
       <div
         id='fade_wrapper'
         style={{
-          background: this.props.linearGradient,
-          opacity: 0.9
+          background: this.props.linearGradient
         }}
       >
         <div id='box1_text'>
@@ -29,7 +28,6 @@ class About extends React.PureComponent {
             MY JOURNEY
           </a>
           <a
-            // id="portfolio_link"
             className='box1_link2'
             href='#portfolio'
             aria-label="Click here to view Walter's current projects"
@@ -61,24 +59,7 @@ class About extends React.PureComponent {
           </div>
          
           <div id='journey'
-            className='box2'
-            style={{
-              background: this.props.darkerBackgroundColor
-            }}>
-            <Picture
-              className='box2_img'
-              alt='walter profile'
-              sources={[
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.webp',
-                  type: "image/webp"
-                },
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1553923628/portfolio%20website/about/profile_fit.png',
-                  type: "image/png"
-                }
-              ]}
-            />
+            className='box2'>
             <p>
               Hello World! Welcome to my portfolio website. I built it primarily
               using React, Redux, and Sass. Checkout my
@@ -89,80 +70,7 @@ class About extends React.PureComponent {
               >
                 <b className='box2_internal_links'> Portfolio Website Code here</b>
               </a>
-              . A bit about me. I started learning to program in January of 2018. 
-              I accepted my first offer for a full-time position as a Javascript Developer at The Atom Group in
-           Portsmouth, NH. Most of my work involved working with large-scale
-           JavaScript web applications, submitting solutions that added
-           enhanced functionality and clarity to an existing codebase. In March of 
-           2019 I accepted a position at Walkin'
-           Pets as a LAMP stack Developer, a local business which
-           provides wheelchairs and other medical supplies for pets in need. My
-           core contribution to Walkin' Pets was to fix, optimize, and maintain their
-           custom sizing web app, referred to in-house as the "Wizard", which
-           allows users to calculate the correct wheelchair for their pet by
-           entering specific measurements (rear leg height, weight, breed
-           etc.).
             </p>
-          </div>
-          <div className='box3'
-            style={{
-              background: this.props.darkerBackgroundColor
-            }}>
-            <Picture
-              className='box3_img'
-              alt='computer desk with coffee'
-              sources={[
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/dream_fit_webp.webp',
-                  type: "image/webp"
-                },
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338984/portfolio%20website/about/dream_fit_png.png',
-                  type: "image/png"
-                }
-              ]}
-            />I've been programming for over two years now, and I'm happy to say that I still very much enjoy
-            honing my skills in this craft. As a software developer at Scan123, I mainly work
-            within the LEMP stack building, maintaining, and utlilizing libraries in various languages
-            to suit the company's needs. We've integrated elements of DevOps and Agile Scrum Methodology 
-            because it helps us work together, establishes realistic expectations, and also helps us maintain 
-            metrics on progress. Despite the current state of the world (Covid19 etc.), we have managed so far 
-            to keep motivated and continue to improve our product for our customers.
-            </div>
-          <div className='box4' style={{
-              background: this.props.darkerBackgroundColor
-            }}>
-            <Picture
-              className='box4_img'
-              alt='working together'
-              sources={[
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/JAMstack_webp.webp',
-                  type: "image/webp"
-                },
-                {
-                  srcSet: 'https://res.cloudinary.com/pacmankana/image/upload/v1575338983/portfolio%20website/about/JAMstack_png.png',
-                  type: "image/png"
-                }
-
-              ]}
-            />
-             Outside of work, I am thankful to God for the strength and will to maintain a healthy lifestyle with my wife 
-             here in Portland, OR. We enjoy the outdoors, our two cats, and striving to honor God through our thoughts 
-             and our actions. Feel free to browse through my<a
-              href='#portfolio'
-              aria-label='Link to Portfolio Section'
-              className='link_to_contact_form'
-            >
-              <b className="box2_internal_links"> portfolio </b>
-            </a>  
-             section below. If you'd like to reach out, please use the <a
-              href='#contact'
-              aria-label='Link to Contact Form'
-              className='link_to_portfolio_section'
-            >
-              <b className="box2_internal_links"> contact form</b>
-            </a> at the bottom of this page.
           </div>
         </div>
       </Fragment>

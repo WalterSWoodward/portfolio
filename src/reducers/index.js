@@ -18,7 +18,7 @@ const initialState = {
       alt: "handicappedpets wizard sizer",
       title: "Wizard Sizer",
       languages: "WordPress, PHP, SQL, JavaScript",
-      text: "A highly interactive wheelchair sizing application which I fixed, rebuilt, and refactored for Walkin' Pets",
+      text: "A highly interactive wheelchair sizing application which I built for Walkin' Pets",
       deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink
     },
@@ -124,85 +124,6 @@ const initialState = {
       deploy_link: "https://www.codewars.com/users/pacManKana",
       deploy_link_icon: faExternalLinkAlt
     }
-    // OLDER PROJECTS -- START
-    // "quote_machine": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200391/portfolio%20website/portfolio_cards/quote_machine.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200391/portfolio%20website/portfolio_cards/quote_machine.png",
-    //   alt: "react redux quote machine",
-    //   title:"Quote Machine",
-    //   languages:"React and Redux",
-    //   text:"View a new random quote each time your press the `Next` button icon and share the quotes you like on Twitter!",
-    //   deploy_link:"https://walterswoodward.github.io/react-redux-quote-machine/",
-    //   deploy_link_icon:  faCode,
-    //   code_link: "https://github.com/walterswoodward/react-redux-quote-machine",
-    //   code_link_icon: faGithub
-    // },
-    // "min_portfolio": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200391/portfolio%20website/portfolio_cards/portfolio.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200391/portfolio%20website/portfolio_cards/portfolio.png",
-    //   alt: "minimalist portfolio about page",
-    //   title:"Minimalist Portfolio",
-    //   languages:"Responsive Web Design",
-    //   text:"A minimalist portfolio that I completed as the final project of freeCodeCamp's Responsive Web Design curriculum.",
-    //   deploy_link: "https://codepen.io/pacManKana/pen/XPLooJ",
-    //  deploy_link_icon:  faCodepen
-    // },
-
-    // "webix": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200394/portfolio%20website/portfolio_cards/webix.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200394/portfolio%20website/portfolio_cards/webix.jpg",
-    //   alt: "Webix Company Logo",
-    //   title: "Webix Mock Docs",
-    //   languages:"HTML and CSS",
-    //   text: "A mock documentation for those interested in learning how to use Webix. Part of the Responsive Web Design curriculum through FCC.",
-    //   deploy_link:"https://codepen.io/pacManKana/pen/xaNjZG?editors=1100",
-    //   deploy_link_icon:  faCodepen
-    // },
-    // "fiji_crafts": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fpc_logo.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fpc_logo.png",
-    //   alt: "Fiji Palm Crafts Logo",
-    //   title: "Mock Landing Page",
-    //   languages:"HTML and CSS",
-    //   text:"A landing page for a fictitious company (Fiji Palm Crafts). Part of the Responsive Web Design curriculum through FCC.",
-    //   deploy_link: "https://codepen.io/pacManKana/pen/NLoBvO",
-    //   deploy_link_icon:   faCodepen
-    // },
-    // "fijian_mat": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fijian_mat.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/fijian_mat.png",
-    //   alt: "Fijian Mat Traditional Pattern",
-    //   title:"Mock Survey Form",
-    //   languages:"HTML and CSS",
-    //   text:"A mock survey form I created for a fictitious company Fiji Made Mats. Part of the FCC Responsive Web Design curriculum.",
-    //   deploy_link:"https://codepen.io/pacManKana/pen/GwpEBL",
-    //   deploy_link_icon:  faCodepen
-    // },
-    // "pomodoro": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200390/portfolio%20website/portfolio_cards/pomodoro.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200390/portfolio%20website/portfolio_cards/pomodoro.png",
-    //   alt: "react pomodoro screen shot",
-    //   title:"React Pomodoro",
-    //   languages:"React, Netlify",
-    //   text:"An app built to help coders to practice the pomodoro time management technique throughout the work day!",
-    //   deploy_link:"https://goofy-fermi-ba815d.netlify.com/",
-    //   deploy_link_icon:  faLink,
-    //   code_link: "https://github.com/walterswoodward/react_pomodoro",
-    //   code_link_icon: faGithub
-    // },
-    // "randomizer": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/randomizer_black_slim.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200392/portfolio%20website/portfolio_cards/randomizer_black_slim.png",
-    //   alt: "randomizer project logo",
-    //   title: "Randomizer",
-    //   languages:"MongoDB, Express, React, NodeJS",
-    //   text:"An education based application designed to help teachers track, process, and manage class participation data",
-    //   deploy_link: "https://github.com/Lambda-School-Labs/CS8-randomizer",
-    //   deploy_link_icon: faCode,
-    //   code_link:"https://lambda-labs-frontend.herokuapp.com/",
-    //   code_link_icon: faLink
-    // },
-    // OLDER PROJECTS -- END
   },
   backgroundColor: '',
   linearGradient: '',
@@ -223,20 +144,18 @@ export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_BACKGROUND:
       const HUE = Math.floor(Math.random() * 230);
-      // const HUE_alt = Math.floor(Math.random() * 230);
-      // const HUE_third = Math.floor(Math.random() * 230);
       const SAT = 40;
-      const LIGHT = 70;
+      const LIGHT = 30;
       let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
       let altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
       let thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
       let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
       let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
-
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
-    case TOGGLE_DROP_DOWN:
 
+    case TOGGLE_DROP_DOWN:
       return { ...state, dropDownOpen: !state.dropDownOpen };
+
     case TOGGLE_OVERLAY:
       let display = state.loadOverlay.display === 'block';
       let newDisplay = '';
@@ -248,6 +167,7 @@ export const Reducer = (state = initialState, action) => {
           display: newDisplay
         }
       }
+
     case ERROR:
       return { ...state, error: action.errorMessage };
     default:

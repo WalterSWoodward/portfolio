@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer" style={{ color: this.props.backgroundColor }}>
+      <footer className="footer">
         &copy; 2018 Walter S Woodward{" "}
       </footer>
     );

@@ -43,6 +43,7 @@ class ContactLinks extends Component {
             <div className='contact_form' style={{
               background: this.props.darkerBackgroundColor
             }}>
+              <div>Email me directly using the form below!</div>
               <div className='contact_form_top'>
                 <div
                   id='contact_name_field'
@@ -59,7 +60,6 @@ class ContactLinks extends Component {
                     id='contact_name_input'
                     type='text'
                     name='name'
-                    // placeholder="Your Name"
                     className='contact_input_field'
                     style={{ outlineColor: this.props.backgroundColor }}
                     required
@@ -80,7 +80,6 @@ class ContactLinks extends Component {
                     id='contact_email_input'
                     type='email'
                     name='_replyto'
-                    // placeholder="Your Email"
                     className='contact_input_field'
                     style={{ outlineColor: this.props.backgroundColor }}
                     required
@@ -96,7 +95,6 @@ class ContactLinks extends Component {
                     this.handleChange('message', event.target.value)
                   }
                   type='textarea'
-                  // placeholder="Your Message"
                   className='contact_input_field'
                   id='contact_text_input'
                   name='message'
