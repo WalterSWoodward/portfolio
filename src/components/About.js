@@ -57,23 +57,6 @@ class About extends React.PureComponent {
           <div className='box1'>
           {this.renderLanding()}
           </div>
-         
-          <div id='journey'
-            className='box2'>
-            <p>
-              Hello World! Welcome to my portfolio website. I built it primarily
-              using React, Redux, and Sass. Checkout my
-              <a
-                href='https://github.com/walterswoodward/walterswoodward.github.io'
-                aria-label='Portfolio Github Code here'
-                id='box2_here_container'
-                target="_blank"
-                rel="noopener noreferrer" 
-              >
-                <b className='box2_internal_links'> Portfolio Website Code here</b>
-              </a>
-            </p>
-          </div>
         </div>
       </Fragment>
     );

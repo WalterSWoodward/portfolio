@@ -85,49 +85,15 @@
   font-weight: bold;
 }
 
-.box3 {
-  color: whitesmoke;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px 30px 60px 30px;
-  text-align: center;
-}
-
-.box3_img {
-  width: 45%;
-  border-radius: 100%;
-  margin: 10px 5%;
-  shape-outside: circle(50%);
-  float: right;
-}
-
-.box4 {
-  color: whitesmoke;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px 30px 60px 30px;
-  text-align: center;
-}
-
-.box4_img {
-  width: 45%;
-  border-radius: 100%;
-  margin: 10px 5%;
-  shape-outside: circle(50%);
-  float: left;
-}
-
 @media (max-width: 768px) {
   .about {
     line-height: 1.5;
     font-size: 1rem;
   }
-  .box2,
-  .box3,
-  .box4 {
+  .box2{
     text-align: center;
   }
-  .box2_img,
-  .box3_img,
-  .box4_img {
+  .box2_img {
     width: 90%;
     margin-bottom: 30px;
     shape-outside: none;

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import About from './About';
 import NavBar from './NavBar';
 import Projects from './Projects';
-import ContactLinks from './ContactLinks';
+import ContactForm from './ContactForm';
 import Footer from './Footer';
 
 function Home  (){
@@ -11,7 +11,7 @@ function Home  (){
         <About />
         <NavBar />
         <Projects />
-        <ContactLinks />
+        <ContactForm />
         <Footer />
       </Fragment>
     );

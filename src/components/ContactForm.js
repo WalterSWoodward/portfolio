@@ -5,7 +5,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-class ContactLinks extends Component {
+class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +43,6 @@ class ContactLinks extends Component {
             <div className='contact_form' style={{
               background: this.props.darkerBackgroundColor
             }}>
-              <div>Email me directly using the form below!</div>
               <div className='contact_form_top'>
                 <div
                   id='contact_name_field'
@@ -200,4 +199,4 @@ function mapStateToProps(state) {
   return { backgroundColor: state.backgroundColor, darkerBackgroundColor: state.darkerBackgroundColor };
 }
 
-export default connect(mapStateToProps)(ContactLinks);
+export default connect(mapStateToProps)(ContactForm);

@@ -67,22 +67,6 @@ class NavBar extends Component {
           </div>
         </a>
         <a
-          id='journey_link'
-          href='#journey'
-          className='navbar_link_button'
-          style={{ color: this.props.backgroundColor }}
-        >
-          <FontAwesomeIcon
-            icon={faUserAstronaut}
-            id='journey_icon'
-            className='navbar_icon'
-            aria-hidden='false'
-          />
-          <div id='journey-icon_text' className='icon_text'>
-            Journey
-          </div>
-        </a>
-        <a
           id='portfolio_link'
           href='#portfolio'
           className='navbar_link_button'
