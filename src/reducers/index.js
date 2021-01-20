@@ -44,18 +44,18 @@ const initialState = {
       code_link: "https://github.com/walterswoodward/exercise_tracker_frontend",
       code_link_icon: faGithub
     },
-    "url_shortener": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_webp.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_png.png",
-      alt: "url shortener app",
-      title: "URL Shortener",
-      languages: "React, Netlify, Heroku, Mongoose, Express",
-      text: "A MERN stack app which generates a new shortened URL given a valid URL address",
-      deploy_link: "https://q_auto/vibrant-leakey-c7c0f0.netlify.com/",
-      deploy_link_icon: faLink,
-      code_link: "https://github.com/walterswoodward/url_shortener_frontend",
-      code_link_icon: faGithub
-    },
+    // "url_shortener": {
+    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_webp.webp",
+    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_png.png",
+    //   alt: "url shortener app",
+    //   title: "URL Shortener",
+    //   languages: "React, Netlify, Heroku, Mongoose, Express",
+    //   text: "A MERN stack app which generates a new shortened URL given a valid URL address",
+    //   deploy_link: "https://q_auto/vibrant-leakey-c7c0f0.netlify.com/",
+    //   deploy_link_icon: faLink,
+    //   code_link: "https://github.com/walterswoodward/url_shortener_frontend",
+    //   code_link_icon: faGithub
+    // },
     "calculator": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_webp.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_png.png",
