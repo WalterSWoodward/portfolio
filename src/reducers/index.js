@@ -6,7 +6,7 @@ import {
 } from "../actions";
 import {
   faLink,
-  faExternalLinkAlt
+  // faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 

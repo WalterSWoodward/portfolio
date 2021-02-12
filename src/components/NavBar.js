@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { changeBackground, toggleDropDown } from '../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserAstronaut, faBrain, faHandshake, faGlobeAsia, faPalette} from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faHandshake, faGlobeAsia, faPalette} from '@fortawesome/free-solid-svg-icons';
 const bodyScrollLock = require('body-scroll-lock');
 
 

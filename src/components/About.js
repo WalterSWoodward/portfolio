@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { toggleOverlay } from '../actions';
-import { Picture } from 'react-responsive-picture';
 
 class About extends React.PureComponent {
   componentDidMount() {
@@ -13,7 +12,7 @@ class About extends React.PureComponent {
    
       <div
         id='fade_wrapper'
-        class="about__wrap"
+        className="about__wrap"
         style={{
           background: this.props.linearGradient
         }}
