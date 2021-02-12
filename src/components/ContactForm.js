@@ -19,8 +19,6 @@ class ContactForm extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
-  // Field could be 'name', 'email', or 'message'
-  // Value is whatever the user types into the input field.
   handleChange(field, value) {
     this.setState({ [field]: value });
   }

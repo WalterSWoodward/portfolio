@@ -56,8 +56,6 @@ class ProjectCards extends Component {
   };
 
   render() {
-    // To grasp what I am doing here, please refer to BOTH the createCards() method above AND
-    // the data, which is brought in as a prop from the "redux store" located at ../reducers/index.js
     return <div className='cards'>{this.createCards()}</div>;
   }
 }
