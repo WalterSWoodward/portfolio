@@ -22,65 +22,6 @@ const initialState = {
       deploy_link: "https://www.handicappedpets.com/wheelchair-sizer/",
       deploy_link_icon: faLink
     },
-    "dynamic_html_editor": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/dynamic_html_editor_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/dynamic_html_editor_wst.png",
-      alt: "dynamic html editor",
-      title: "HTML Editor",
-      languages: "HTML, CSS, JavaScript, NodeJS",
-      text: "A custom made HTML editor that I put together for some co-workers. It allows you to edit and duplicate HTML snippets.",
-      deploy_link: "https://dynamic-html-editor.netlify.com/",
-      deploy_link_icon: faLink
-    },
-    "exercise_tracker": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/exercise_tracker_webp.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/exercise_tracker_png.png",
-      alt: "exercise tracker app",
-      title: "Exercise Tracker",
-      languages: "React, Netlify, Heroku, Mongoose, Express",
-      text: "A MERN stack app which facilitates daily data logging and tracking of user exercise routines",
-      deploy_link: "https://relaxed-northcutt-3bf624.netlify.com/",
-      deploy_link_icon: faLink,
-      code_link: "https://github.com/walterswoodward/exercise_tracker_frontend",
-      code_link_icon: faGithub
-    },
-    // "url_shortener": {
-    //   image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_webp.webp",
-    //   alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/url_shortener_png.png",
-    //   alt: "url shortener app",
-    //   title: "URL Shortener",
-    //   languages: "React, Netlify, Heroku, Mongoose, Express",
-    //   text: "A MERN stack app which generates a new shortened URL given a valid URL address",
-    //   deploy_link: "https://q_auto/vibrant-leakey-c7c0f0.netlify.com/",
-    //   deploy_link_icon: faLink,
-    //   code_link: "https://github.com/walterswoodward/url_shortener_frontend",
-    //   code_link_icon: faGithub
-    // },
-    "calculator": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_webp.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/calculator_png.png",
-      alt: "react calculator screen shot",
-      title: "React Calculator",
-      languages: "React, Netlify",
-      text: "A clone of the macOS basic calculator that I built as the fourth project in the FCC Front End curriculum!",
-      deploy_link: "https://ecstatic-noether-3a2a9e.netlify.com/",
-      deploy_link_icon: faLink,
-      code_link: "https://github.com/walterswoodward/react_calculator",
-      code_link_icon: faGithub
-    },
-    "drum_machine": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/drum_machine_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/drum_machine_wst.png",
-      url_link: "https://res.cloudinary.com/pacmankana/image/upload/q_auto/v1543200388/portfolio%20website/portfolio_cards/drum_machine.webp",
-      alt: "drum machine screen shot",
-      title: "Drum Machine",
-      languages: "React, Netlify",
-      text: "Make some beats with this simple drum machine I made as my third project in the FCC Front End curriculum!",
-      deploy_link: "https://serene-mirzakhani-902b73.netlify.com/",
-      deploy_link_icon: faLink,
-      code_link: "https://github.com/walterswoodward/react-drum-machine",
-      code_link_icon: faGithub
-    },
     "markdown_previewer": {
       image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/markdown_previewer_wst.webp",
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/markdown_previewer_wst.png",
@@ -102,27 +43,6 @@ const initialState = {
       text: "This was my first FCC project! Just a simple static page with some information on the famous inventor, Nikola Tesla.",
       deploy_link: "https://codepen.io/pacManKana/pen/oPabKx",
       deploy_link_icon: faCodepen
-    },
-
-    "freeCodeCamp": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/fcc_webp.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339498/portfolio%20website/portfolio_cards/fcc_png.png",
-      alt: "freeCodeCamp company logo",
-      title: "freeCodeCamp",
-      languages: "Express, MongoDB",
-      text: "FCC has been very helpful in learning some of the fundamentals of web app development!",
-      deploy_link: "https://www.freecodecamp.org/walterswoodward",
-      deploy_link_icon: faExternalLinkAlt
-    },
-    "codewars": {
-      image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/codwars_wst.webp",
-      alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/codwars_wst.png",
-      alt: "code wars company logo",
-      title: "Codewars",
-      languages: "Javascript",
-      text: "Codewars has been very important in transitioning me from a beginner to an intermediate javascript coder.",
-      deploy_link: "https://www.codewars.com/users/pacManKana",
-      deploy_link_icon: faExternalLinkAlt
     }
   },
   backgroundColor: '',
