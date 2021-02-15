@@ -98,7 +98,7 @@ class NavBar extends Component {
             Contact
           </div>
         </a>
-        <a
+        {/* <a
           id='splash'
           href='#splash'
           onClick={this.changeColor}
@@ -115,7 +115,7 @@ class NavBar extends Component {
           <div id='splash-icon_text' className='icon_text'>
             Splash
           </div>
-        </a>
+        </a> */}
       </Fragment>
     );
   };
