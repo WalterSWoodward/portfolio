@@ -12,43 +12,38 @@ class ProjectCards extends Component {
         key={index}
         style={{ backgroundColor: this.props.backgroundColor }}
       >
-        <Picture
-          style={{width: "100%"}}
-          alt={projects[card].alt}
-          sources={[
-            {
-              srcSet:  projects[card].alt_image_url || projects[card].image_url,
-            }
-          ]}
-        />
         <div className='card_body'>
-          <div className='card_title'>{projects[card].title}</div>
-          <div className='card_subtitle'>
-            <b>{projects[card].languages}</b>
+          <div className="card-body__item">
+            <div className='card_title'>{projects[card].title}</div>
+            <div className='card_subtitle'>
+              <b>{projects[card].languages}</b>
+            </div>
+            <div className='card_text'>{projects[card].text}</div>
           </div>
-          <div className='card_text'>{projects[card].text}</div>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            className='card_buttons'
-            id='card_button1'
-            href={projects[card].deploy_link}
-            aria-label='Click on this link to view the live deployment of this project'
-          >
-            <FontAwesomeIcon icon={projects[card].deploy_link_icon} aria-hidden="false" />
-          </a>
-          {projects[card].code_link_icon ? (
+          <div className="card-body__item">
             <a
-              target='_blank'
-              rel='noopener noreferrer'
-              className='card_buttons'
-              id='card_button2'
-              href={projects[card].code_link}
-              aria-label='Click on this link to view the code for this project.'
-            >
-              <FontAwesomeIcon icon={projects[card].code_link_icon} aria-hidden="false" />
-            </a>
-          ) : null}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='card_buttons'
+                id='card_button1'
+                href={projects[card].deploy_link}
+                aria-label='Click on this link to view the live deployment of this project'
+              >
+                <FontAwesomeIcon icon={projects[card].deploy_link_icon} aria-hidden="false" />
+              </a>
+              {projects[card].code_link_icon ? (
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='card_buttons'
+                  id='card_button2'
+                  href={projects[card].code_link}
+                  aria-label='Click on this link to view the code for this project.'
+                >
+                  <FontAwesomeIcon icon={projects[card].code_link_icon} aria-hidden="false" />
+                </a>
+              ) : null}
+          </div>
         </div>
       </div>
     ));
