@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { changeBackground, toggleDropDown } from '../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBrain, faHandshake, faGlobeAsia, faPalette} from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faHandshake, faGlobeAsia, faPalette, faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 const bodyScrollLock = require('body-scroll-lock');
 
 
@@ -57,7 +57,7 @@ class NavBar extends Component {
           style={{ color: this.props.backgroundColor }}
         >
           <FontAwesomeIcon
-            icon={faGlobeAsia}
+            icon={faHome}
             id='about_icon'
             className='navbar_icon'
             aria-hidden='false'
@@ -73,7 +73,7 @@ class NavBar extends Component {
           style={{ color: this.props.backgroundColor }}
         >
           <FontAwesomeIcon
-            icon={faBrain}
+            icon={faBriefcase}
             id='portfolio_icon'
             className='navbar_icon'
             aria-hidden='false'
@@ -89,7 +89,7 @@ class NavBar extends Component {
           style={{ color: this.props.backgroundColor }}
         >
           <FontAwesomeIcon
-            icon={faHandshake}
+            icon={faEnvelope}
             id='contact_icon'
             className='navbar_icon'
             aria-hidden='false'
