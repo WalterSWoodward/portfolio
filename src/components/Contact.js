@@ -5,7 +5,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-class ContactForm extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -197,4 +197,4 @@ function mapStateToProps(state) {
   return { backgroundColor: state.backgroundColor, darkerBackgroundColor: state.darkerBackgroundColor };
 }
 
-export default connect(mapStateToProps)(ContactForm);
+export default connect(mapStateToProps)(Contact);

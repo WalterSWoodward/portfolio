@@ -1,7 +1,14 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+import { 
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link 
+} from "react-router-dom";
 
 import Home from "./components/Home.js";
+import About from "./components/About.js";
+import Contact from "./components/Contact.js";
 
 class App extends Component {
   render() {
@@ -10,8 +17,8 @@ class App extends Component {
     // from a subdirectory
     return (
       <Router>
-        <div>
-          <ul>
+        <Fragment>
+          {/* <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -21,13 +28,13 @@ class App extends Component {
             <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
-          </ul>
-
-          <hr />
+          </ul> */}
           <Switch>
             <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
-        </div>
+        </Fragment>
       </Router>
     );
   }

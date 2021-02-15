@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./css/index.css";
 
-import App from './App';
+import App from './App.js';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { Reducer } from './reducers'
 import thunk from 'redux-thunk';
-
-import * as serviceWorker from './serviceWorker';
 
 if (process.env.NODE_ENV === "production") {
     console.log = function(){}; 
@@ -22,5 +20,3 @@ ReactDOM.render(
     </Provider>, 
     document.getElementById('root')
 );
-
-// serviceWorker.register();
