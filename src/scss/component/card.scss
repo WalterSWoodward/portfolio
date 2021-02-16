@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80%;
-  margin: auto;
+  margin: 0px 10%;
 }
 
 .cards_item {
@@ -12,7 +12,6 @@
   width: 200px;
   border-radius: $border-radius;
   color: white;
-  height: 300px;
   padding: 15px;
 }
 
@@ -57,12 +56,4 @@
 
 #card_button2 {
   margin-left: 15px;
-}
-
-@media(max-width: 768px){
-  .cards {
-    display: flex;
-    justify-content: center;
-    max-width: none;
-  }
 }
