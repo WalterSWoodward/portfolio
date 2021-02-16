@@ -1,17 +1,15 @@
 import React, { Fragment } from 'react';
 import About from './About';
 import NavBar from './NavBar';
-import Projects from './Projects';
+import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Footer from './Footer';
 
 function Home  (){
     return (
       <Fragment>
-        <About />
         <NavBar />
-        <Projects />
-        <Contact />
+        <About />
         <Footer />
       </Fragment>
     );

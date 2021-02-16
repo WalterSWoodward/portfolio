@@ -21,7 +21,7 @@ a:hover {
   z-index: 2;
   top: 0;
   background: whitesmoke;
-  height: 70px;
+  height: $navbar-height;
   font-size: 1.2rem;
   transition: top 0.5s;
   max-width: 1250px;

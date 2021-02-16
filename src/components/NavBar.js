@@ -2,9 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { changeBackground, toggleDropDown } from '../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBrain, faHandshake, faGlobeAsia, faPalette, faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 const bodyScrollLock = require('body-scroll-lock');
-
 
 class NavBar extends Component {
   changeColor = () => {
@@ -52,7 +51,7 @@ class NavBar extends Component {
       <Fragment>
         <a
           id='about_link'
-          href='#about'
+          href='/about'
           className='navbar_link_button'
           style={{ color: this.props.backgroundColor }}
         >
@@ -68,7 +67,7 @@ class NavBar extends Component {
         </a>
         <a
           id='portfolio_link'
-          href='#portfolio'
+          href='/portfolio'
           className='navbar_link_button'
           style={{ color: this.props.backgroundColor }}
         >
@@ -84,7 +83,7 @@ class NavBar extends Component {
         </a>
         <a
           id='contact_link'
-          href='#contact'
+          href='/contact'
           className='navbar_link_button'
           style={{ color: this.props.backgroundColor }}
         >

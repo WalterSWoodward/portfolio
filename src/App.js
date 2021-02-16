@@ -9,6 +9,7 @@ import {
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import Contact from "./components/Contact.js";
+import Portfolio from "./components/Portfolio.js";
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/portfolio" component={Portfolio} />
           </Switch>
         </Fragment>
       </Router>

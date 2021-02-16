@@ -1,60 +1,35 @@
-@keyframes textFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .about {
   display: flex;
   flex-direction: column;
-  line-height: 2;
-  // Is this necessary?
-  // padding: 70px 0px 0px 0px;
   font-size: 1rem;
 }
 
-#fade_wrapper.about__wrap {
-  border-radius: 0px 0px $border-radius $border-radius;
-}
-
-.box1 {
-  color: black;
-  text-align: center;
-  background-size: cover;
-  height: 700px;
-}
-
-#box1_text {
+.body__content {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 700px;
-  padding-top: 100px;
-  animation-name: textFadeIn;
-  animation-duration: 4s;
   color: whitesmoke;
-  border-radius: 0px $border-radius;
+  height: 100vh;
 }
 
 .box1_name {
   font-size: 4rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .box1_description {
-  margin-bottom: 20px;
+  padding: 20px 0px;
 }
 
 .box1_link1, .box1_link2, .box1_link3 {
   font-size: 1.5rem;
   font-weight: bold;
   height: 40px;
-  line-height: 1.7;
   margin-bottom: 20px;
   color: whitesmoke;
   &:hover {
@@ -63,47 +38,9 @@
   }
 }
 
-.box1_text_link1:hover,
-.box1_text_link2:hover,
-.box1_text_link3:hover
-{
-  margin: 0;
-  padding: 0;
-}
-
-.box2 {
-  color: black;
-  padding: 70px 30px 0px 30px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.box2_img {
-  margin: 10px 5%;
-  width: 45%;
-  border-radius: 100%;
-  shape-outside: circle(50%);
-  float: left;
-}
-
-.box2_internal_links {
-  color: orange;
-  font-weight: bold;
-}
-
 @media (max-width: 768px) {
   .about {
-    line-height: 1.5;
     font-size: 1rem;
-  }
-  .box2{
-    text-align: center;
-  }
-  .box2_img {
-    width: 90%;
-    margin-bottom: 30px;
-    shape-outside: none;
-    float: none;
   }
 }
 

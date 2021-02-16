@@ -10,6 +10,22 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
+var sheet = (function() {
+	var style = document.createElement("style");
+	style.appendChild(document.createTextNode(""));
+	document.head.appendChild(style);
+	return style.sheet;
+})();
+
+function addCSSRule(sheet, selector, rules, index) {
+	if("insertRule" in sheet) {
+		sheet.insertRule(selector + "{" + rules + "}", index);
+	}
+	else if("addRule" in sheet) {
+		sheet.addRule(selector, rules, index);
+	}
+}
+
 const initialState = {
   projects: {
     "wizard": {
@@ -71,6 +87,8 @@ export const Reducer = (state = initialState, action) => {
       let thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
       let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
       let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
+      addCSSRule(sheet, '.splash', 'background: ' + newLinearGradient, 0);
+      console.log(sheet);
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
 
     case TOGGLE_DROP_DOWN:

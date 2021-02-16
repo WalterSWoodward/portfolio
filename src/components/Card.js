@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Picture } from 'react-responsive-picture';
 
 class ProjectCards extends Component {
   createCards = () => {
@@ -10,7 +9,6 @@ class ProjectCards extends Component {
       <div
         className='cards_item'
         key={index}
-        style={{ backgroundColor: this.props.backgroundColor }}
       >
         <div className='card_body'>
           <div className="card-body__item">
@@ -24,7 +22,7 @@ class ProjectCards extends Component {
             <a
                 target='_blank'
                 rel='noopener noreferrer'
-                className='card_buttons'
+                className='card_button'
                 id='card_button1'
                 href={projects[card].deploy_link}
                 aria-label='Click on this link to view the live deployment of this project'
@@ -35,7 +33,7 @@ class ProjectCards extends Component {
                 <a
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='card_buttons'
+                  className='card_button'
                   id='card_button2'
                   href={projects[card].code_link}
                   aria-label='Click on this link to view the code for this project.'
@@ -56,7 +54,7 @@ class ProjectCards extends Component {
 }
 
 function mapStateToProps(state) {
-  return { projects: state.projects, backgroundColor: state.backgroundColor };
+  return { projects: state.projects};
 }
 
 export default connect(mapStateToProps)(ProjectCards);
