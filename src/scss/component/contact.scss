@@ -51,6 +51,7 @@
   padding: 5px;
   border: none;
   outline-width: 2px;
+  border-radius: $border-radius;
 }
 
 #contact_text_input {
@@ -71,6 +72,7 @@
   margin-top: 20px;
   padding: 10px 20px;
   box-sizing: border-box;
+  border-radius: $border-radius;
 }
 
 #contact_form_button:hover {
