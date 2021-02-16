@@ -12,15 +12,17 @@ a:hover {
   margin: 0px;
   padding: 0px;
 }
-#navigation {
-  width: 100%;
+
+.navbar__navbar {
+  width: 50%;
+  margin-right: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 2;
   top: 0;
-  background: whitesmoke;
+  color: whitesmoke;
   height: $navbar-height;
   font-size: $header4;
   transition: top 0.5s;
@@ -33,14 +35,18 @@ a:hover {
 .desktop_view {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-around;
-  padding: 0px 10%;
 }
 
 .navbar_link_button {
   text-align: center;
-  padding: 5px 20px;
+  margin: 5px 20px;
+  color: white;
+  &.active {
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid white;
+  }
 }
 
 .navbar_icon {
@@ -50,7 +56,7 @@ a:hover {
 
 .icon_text {
   // Need this so there isn't a padding jolt when the text is inserted!!
-  width: 80px;
+  // width: 80px;
   animation-name: textFadeIn;
   animation-duration: 1s;
 }
@@ -73,7 +79,7 @@ a:hover {
   width: 30px;
   height: 4px;
   margin: 6px 0;
-  background: black;
+  background: whitesmoke;
 }
 
 .dropdownClosed {
@@ -91,7 +97,7 @@ a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: whitesmoke;
+  background: black;
   padding: 100px 0px;
   box-sizing: border-box;
 }
@@ -102,15 +108,17 @@ a:hover {
   #navigation {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
   }
   .mobile_view {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     cursor: pointer;
     height: 100%;
     width: 100%;
+    padding: 0px 5%;
   }
 
   .mobile_view_text {
