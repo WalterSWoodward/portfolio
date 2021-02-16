@@ -19,20 +19,19 @@ class NavBar extends Component {
   };
 
   handleClick = (event) => {
-    event.stopPropagation();
     this.props.toggleDropDown();
   };
 
   hamburgerMenu = () => {
     return (
       <Fragment>
-        <div className="menu" onClick={this.handleClick}>
+        <div className="menu">
           <div className='bars'>
-            <div className='bar splash' />
-            <div className='bar splash' />
-            <div className='bar splash' />
+            <div className='bar splash__background' />
+            <div className='bar splash__background' />
+            <div className='bar splash__background' />
           </div>
-          <div className='mobile_view_text' style={{ color: this.props.backgroundColor }} >Menu</div>
+          <div className='mobile_view_text splash__color'>Menu</div>
         </div>
       </Fragment>
     );
@@ -71,7 +70,7 @@ class NavBar extends Component {
       : enableBodyScroll(targetElement);
     return (
       <nav id='navigation'>
-        <div className='mobile_view'>
+        <div className='mobile_view' onClick={this.handleClick}>
           {this.hamburgerMenu()}
           <div className={dropdown}>{this.renderMenu()}</div>
         </div>

@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  font-size: 1rem;
 }
 
 .contact_form {
@@ -16,6 +15,7 @@
   flex-direction: column;
   color: whitesmoke;
   min-height: 100vh;
+  font-size: $header5;
 }
 
 .contact_form_top {

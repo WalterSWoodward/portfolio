@@ -28,7 +28,7 @@ class ContactForm extends Component {
       <Fragment>
           <form
             onSubmit={this.submitForm}
-            className='contact-form__form, splash'
+            className='contact-form__form'
             action='https://formspree.io/f/mpzoozjo'
             method="POST"
           >
@@ -123,8 +123,7 @@ class ContactForm extends Component {
 
 function mapStateToProps(state) {
   return {
-    backgroundColor: state.backgroundColor,
-    darkerBackgroundColor: state.darkerBackgroundColor
+    backgroundColor: state.backgroundColor
   };
 }
 

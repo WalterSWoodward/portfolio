@@ -22,25 +22,24 @@
 
 .card_title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: 1.2rem;
+  font-size: $header3;
   padding: 5px 0px;
 }
 
 .card_subtitle {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: 0.9rem;
+  font-size: $header5;
   font-weight: normal;
   margin-bottom: 5px;
   padding: 7px 0px;
 }
 
 .card_text {
-  font-size: 0.8rem;
   margin-bottom: 10px;
 }
 
 .card_button {
-  font-size: 1.3rem;
+  font-size: $header3;
   background: transparent;
   border-radius: 2px;
   border: none;

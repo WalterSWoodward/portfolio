@@ -10,7 +10,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
 }
 
 .body__content {
@@ -27,35 +26,38 @@
 }
 
 .body-content__name {
-  font-size: 4rem;
   font-weight: bold;
   text-align: center;
+  font-size: $header1;
 }
 
 .body-content__title {
   padding: 20px 0px;
+  font-size: $header3;
+  text-align: center;
 }
 
 .body-content__link {
-  font-size: 1.5rem;
   font-weight: bold;
-  height: 40px;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: whitesmoke;
+  font-size: $header5;
   &:hover {
     border-bottom: 2px solid whitesmoke;
+    margin-bottom: 8px;
   }
 }
 
 @media (max-width: 768px) {
   .about {
-    font-size: 1rem;
+    font-size: $header1;
   }
 }
 
 @media (max-width: 515px) {
   .body-content__name {
-    font-size: 2.7rem;
+    font-size: $header1;
   }
   .box1_icon_text {
     display: none;

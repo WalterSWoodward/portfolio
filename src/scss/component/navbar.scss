@@ -22,7 +22,7 @@ a:hover {
   top: 0;
   background: whitesmoke;
   height: $navbar-height;
-  font-size: 1.2rem;
+  font-size: $header4;
   transition: top 0.5s;
   max-width: 1250px;
   font-family: "Montserrat", sans-serif;
@@ -41,11 +41,10 @@ a:hover {
 .navbar_link_button {
   text-align: center;
   padding: 5px 20px;
-  font-size: 1.4rem;
 }
 
 .navbar_icon {
-  font-size: 2.5rem;
+  font-size: $header1;
   padding: 5px 0px;
 }
 
@@ -115,15 +114,15 @@ a:hover {
   }
 
   .mobile_view_text {
-    font-size: 1.4rem;
+    font-size: $header5;
   }
 
   .navbar_link_button {
-    font-size: 1.4rem;
+    font-size: $header5;
   }
 
   .navbar_icon {
-    font-size: 4rem;
+    font-size: $header1;
   }
   .desktop_view {
     display: none;

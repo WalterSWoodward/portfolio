@@ -4,8 +4,7 @@ import {
   TOGGLE_DROP_DOWN
 } from "../actions";
 import {
-  faLink,
-  // faExternalLinkAlt
+  faLink
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
