@@ -20,19 +20,18 @@ class About extends React.PureComponent {
           <div className='box1_description'>FULL STACK WEB DEVELOPER</div>
           <a
             className='box1_link2'
-            href='#portfolio'
+            href='/portfolio'
             aria-label="Click here to view Walter's current projects"
           >
             PORTFOLIO
           </a>
           <a
             className='box1_link3'
-            href='#contact'
+            href='/contact'
             aria-label="Click here to view Walter's Contact form"
           >
             CONTACT
           </a>
-          <Footer />
         </div>
       </Fragment>
     );
