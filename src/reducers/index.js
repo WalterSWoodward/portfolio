@@ -1,7 +1,6 @@
 import {
   ERROR,
   CHANGE_BACKGROUND,
-  TOGGLE_OVERLAY,
   TOGGLE_DROP_DOWN
 } from "../actions";
 import {
