@@ -16,23 +16,23 @@ class About extends React.PureComponent {
         <div id='fade_wrapper'
         className="about__wrap body__content"
         style={{ background: this.props.linearGradient }}>
-        <div className='box1_name'>WALTER WOODWARD</div>
-        <div className='box1_description'>FULL STACK WEB DEVELOPER</div>
-        <a
-          className='box1_link2'
-          href='#portfolio'
-          aria-label="Click here to view Walter's current projects"
-        >
-          PORTFOLIO
-        </a>
-        <a
-          className='box1_link3'
-          href='#contact'
-          aria-label="Click here to view Walter's Contact form"
-        >
-          CONTACT
-        </a>
-        <Footer />
+          <div className='header__name'>WALTER WOODWARD</div>
+          <div className='box1_description'>FULL STACK WEB DEVELOPER</div>
+          <a
+            className='box1_link2'
+            href='#portfolio'
+            aria-label="Click here to view Walter's current projects"
+          >
+            PORTFOLIO
+          </a>
+          <a
+            className='box1_link3'
+            href='#contact'
+            aria-label="Click here to view Walter's Contact form"
+          >
+            CONTACT
+          </a>
+          <Footer />
         </div>
       </Fragment>
     );
