@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import NavBar from './NavBar.js';
 import ContactForm from './ContactForm.js';
+import Footer from './Footer.js';
 
 class Contact extends Component {
   constructor(props) {
@@ -29,9 +30,8 @@ class Contact extends Component {
     return (
         <Fragment>
         <NavBar/>
-        <div className='contact' name='contact'>
-          <ContactForm/>
-        </div>
+        <ContactForm/>
+        <Footer/>
       </Fragment>
     );
   }

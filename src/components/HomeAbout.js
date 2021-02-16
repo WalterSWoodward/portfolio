@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
-import ContactLinks from './ContactLinks';
+import HomeContactLinks from './HomeContactLinks';
 
 class HomeAbout extends React.PureComponent {
   render() {
@@ -26,7 +26,7 @@ class HomeAbout extends React.PureComponent {
                 >
                 CONTACT
                 </Link>
-                <ContactLinks/>
+                <HomeContactLinks/>
             </div>
         </div>
       </Fragment>

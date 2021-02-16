@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-class ContactLinks extends Component {
+class HomeContactLinks extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -109,8 +108,4 @@ class ContactLinks extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { backgroundColor: state.backgroundColor, darkerBackgroundColor: state.darkerBackgroundColor };
-}
-
-export default connect(mapStateToProps)(ContactLinks);
+export default HomeContactLinks;

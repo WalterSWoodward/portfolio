@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import NavBar from './NavBar';
 import HomeAbout from './HomeAbout';
+import Footer from './Footer';
 
 class Home extends React.PureComponent {
   render() {
@@ -10,6 +11,7 @@ class Home extends React.PureComponent {
       <Fragment>
         <NavBar/>
         <HomeAbout/>
+        <Footer/>
       </Fragment>
     );
   }

@@ -26,6 +26,7 @@ class ContactForm extends Component {
     const { status } = this.state;
     return (
       <Fragment>
+        <div className='contact' name='contact'>
           <form
             onSubmit={this.submitForm}
             className='contact-form__form'
@@ -96,6 +97,7 @@ class ContactForm extends Component {
               {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </div>
           </form>
+        </div>
       </Fragment>
     );
   }
