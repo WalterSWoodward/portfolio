@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
 import HomeContactLinks from './HomeContactLinks';
@@ -34,8 +33,4 @@ class HomeAbout extends React.PureComponent {
   }
 }
 
-const mapStateToProps = state => {
-  return { };
-};
-
-export default connect(mapStateToProps)(HomeAbout);
+export default HomeAbout;
