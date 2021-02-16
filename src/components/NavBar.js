@@ -44,7 +44,7 @@ class NavBar extends Component {
   renderMenu = () => {
     return (
       <Fragment>
-        <Link to='/about' className='navbar_link_button splash__color'>
+        <Link to='/' className='navbar_link_button splash__color'>
           <FontAwesomeIcon icon={faHome} className='navbar_icon' aria-hidden='false'/>
           <div id='about-icon_text' className='icon_text'>Home</div>
         </Link>

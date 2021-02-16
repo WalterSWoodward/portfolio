@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
-import Cards from "./Card";
+import PortfolioCards from "./PortfolioCards";
 import NavBar from "./NavBar";
 
 class Portfolio extends Component {
@@ -9,7 +9,7 @@ class Portfolio extends Component {
       <Fragment>
         <NavBar/>
         <div id="portfolio" className="portfolio splash__background" name="portfolio">
-          <Cards />
+          <PortfolioCards/>
         </div>
       </Fragment>
     );

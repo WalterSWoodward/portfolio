@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class ProjectCards extends Component {
+class PortfolioCards extends Component {
   createCards = () => {
     let projects = this.props.projects;
     let cardsList = Object.keys(this.props.projects).map((card, index) => (
@@ -57,4 +57,4 @@ function mapStateToProps(state) {
   return { projects: state.projects};
 }
 
-export default connect(mapStateToProps)(ProjectCards);
+export default connect(mapStateToProps)(PortfolioCards);
