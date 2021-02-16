@@ -1,14 +1,13 @@
 // sass --watch ./src/scss/main.scss:./src/css/index.css --style compressed
-// Base
-@import "base/normalize.scss";
-
 // Utils
 @import "utils/variables.scss";
 
-// Component
+// Base
+@import "base/normalize.scss";
+@import "base/base.scss";
 
-@import "component/index";
-@import "component/home";
+
+// Component
 @import "component/navbar";
 @import "component/about";
 @import "component/portfolio";
