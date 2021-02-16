@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { changeBackground, toggleDropDown } from '../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+
 const bodyScrollLock = require('body-scroll-lock');
 
 class NavBar extends Component {
@@ -43,18 +45,18 @@ class NavBar extends Component {
   renderMenu = () => {
     return (
       <Fragment>
-        <a href='/about' className='navbar_link_button' style={{ color: this.props.backgroundColor }} >
+        <Link to='/about' className='navbar_link_button splash__color'>
           <FontAwesomeIcon icon={faHome} className='navbar_icon' aria-hidden='false'/>
           <div id='about-icon_text' className='icon_text'>Home</div>
-        </a>
-        <a href='/portfolio' className='navbar_link_button' style={{ color: this.props.backgroundColor }} >
+        </Link>
+        <Link to='/portfolio' className='navbar_link_button splash__color'>
           <FontAwesomeIcon icon={faBriefcase} className='navbar_icon' aria-hidden='false'/>
           <div className='icon_text'>Portfolio</div>
-        </a>
-        <a href='/contact' className='navbar_link_button' style={{ color: this.props.backgroundColor }} >
+        </Link>
+        <Link to='/contact' className='navbar_link_button splash__color'>
           <FontAwesomeIcon icon={faEnvelope} className='navbar_icon' aria-hidden='false'/>
           <div id='contact-icon_text' className='icon_text'>Contact</div>
-        </a>
+        </Link>
       </Fragment>
     );
   };

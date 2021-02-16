@@ -29,7 +29,7 @@ class Contact extends Component {
     return (
         <Fragment>
         <NavBar/>
-        <div id='contact' className='contact' name='contact'>
+        <div className='contact' name='contact'>
           <ContactForm/>
         </div>
       </Fragment>

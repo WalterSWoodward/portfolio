@@ -1,4 +1,4 @@
-.contact_form_container {
+.contact-form__form {
   border-radius: 5px;
 }
 
@@ -11,12 +11,11 @@
 }
 
 .contact_form {
-  padding: 0px 5%;
+  padding: $navbar-height 5% 0px 5%;
   display: flex;
   flex-direction: column;
-  padding-top: $navbar-height;
   color: whitesmoke;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contact_form_top {
@@ -59,9 +58,9 @@
   color: black;
 }
 
-#contact_text_input:invalid {
-  box-shadow: none;
-}
+// #contact_text_input:invalid {
+//   box-shadow: none;
+// }
 
 #contact_form_button {
   align-self: flex-end;
@@ -82,7 +81,7 @@
 }
 
 @media(max-width: 1250px){
-  .contact_form_container {
+  .contact-form__form {
     border-radius: $border-radius;
   }
 }

@@ -1,6 +1,6 @@
 // sass --watch ./src/scss/main.scss:./src/css/index.css --style compressed
 // Base
-@import "base/normalize";
+@import "base/normalize.scss";
 
 // Utils
 @import "utils/variables.scss";

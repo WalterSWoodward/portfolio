@@ -28,13 +28,11 @@ class ContactForm extends Component {
       <Fragment>
           <form
             onSubmit={this.submitForm}
-            className='contact_form_container, splash'
+            className='contact-form__form, splash'
             action='https://formspree.io/f/mpzoozjo'
             method="POST"
           >
-            <div className='contact_form' style={{
-              background: this.props.darkerBackgroundColor
-            }}>
+            <div className='contact_form splash__background--dark'>
               <div className='contact_form_top'>
                 <div
                   id='contact_name_field'

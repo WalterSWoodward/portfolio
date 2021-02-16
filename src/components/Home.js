@@ -1,35 +1,30 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { toggleOverlay } from '../actions';
+import { Link } from "react-router-dom";
 
 import NavBar from './NavBar';
 
 class Home extends React.PureComponent {
-  componentDidMount() {
-    this.props.toggleOverlay();
-  }
-
   renderLanding = function (){
     return (
       <Fragment>
-        <div id='fade_wrapper'
-        className="body__content splash">
+        <div id='fade_wrapper' className="body__content splash__background">
           <div className='body-content__name'>WALTER WOODWARD</div>
           <div className='body-content__title'>FULL STACK WEB DEVELOPER</div>
-          <a
+          <Link
             className='body-content__link'
-            href='/portfolio'
+            to='/portfolio'
             aria-label="Click here to view Walter's current projects"
           >
             PORTFOLIO
-          </a>
-          <a
+          </Link>
+          <Link
             className='body-content__link'
-            href='/contact'
+            to='/contact'
             aria-label="Click here to view Walter's Contact form"
           >
             CONTACT
-          </a>
+          </Link>
         </div>
       </Fragment>
     );
@@ -39,7 +34,6 @@ class Home extends React.PureComponent {
     return (
       <Fragment>
         <NavBar/>
-        <div style={this.props.loadOverlay} id='loadOverlay' />
         <div
           id='about'
           className='about'
@@ -52,12 +46,7 @@ class Home extends React.PureComponent {
 }
 
 const mapStateToProps = state => {
-  return {
-    loadOverlay: state.loadOverlay,
-  };
+  return { };
 };
 
-export default connect(
-  mapStateToProps,
-  { toggleOverlay }
-)(Home);
+export default connect(mapStateToProps)(Home);

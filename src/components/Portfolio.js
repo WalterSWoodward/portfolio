@@ -8,7 +8,7 @@ class Portfolio extends Component {
     return (
       <Fragment>
         <NavBar/>
-        <div id="portfolio" className="portfolio splash" name="portfolio">
+        <div id="portfolio" className="portfolio splash__background" name="portfolio">
           <Cards />
         </div>
       </Fragment>

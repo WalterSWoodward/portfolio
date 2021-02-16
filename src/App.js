@@ -15,10 +15,10 @@ class App extends Component {
       <Router>
         <Fragment>
           <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/about" component={Home} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/" component={Home} exact/>
+            <Route path="/about" component={Home} exact/>
+            <Route path="/contact" component={Contact} exact/>
+            <Route path="/portfolio" component={Portfolio} exact/>
           </Switch>
         </Fragment>
       </Router>
