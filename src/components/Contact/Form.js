@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import Swal from 'sweetalert2';
 
 class Form extends Component {
   constructor(props) {
@@ -24,6 +25,35 @@ class Form extends Component {
   }
   render() {
     const { status } = this.state;
+    status === "SUCCESS" && Swal.fire({
+        title: 'Success!',
+        icon: 'success',
+        text: 'Thank You for taking the time to reach out to me! I will respond to your email within 24 hours.',
+        customClass: {
+          title: 'sweetalert__title',
+          content: 'sweetalert__content',
+          confirmButton: 'sweetalert__button'
+        },
+        confirmButtonText: 'Close',
+        buttonsStyling: false,
+        background: this.props.linearGradient
+      });
+
+      status === "ERROR" && Swal.fire({
+        title: 'Error!',
+        icon: 'error',
+        text: 'Oops! We could not process your request. Please try again later. Thank You!',
+        customClass: {
+          title: 'sweetalert__title',
+          content: 'sweetalert__content',
+          confirmButton: 'sweetalert__button'
+        },
+        confirmButtonText: 'Close',
+        buttonsStyling: false,
+        background: this.props.linearGradient
+      });
+
+      
     return (
       <Fragment>
         <div className='contact' name='contact'>
@@ -92,9 +122,7 @@ class Form extends Component {
                   required
                 />
               </div>
-              
-              {status === "SUCCESS" ? <p>Thanks!</p> : <input id='contact_form_button' type='submit' value='Send' />}
-              {status === "ERROR" && <p>Ooops! There was an error.</p>}
+              <input id='contact_form_button' type='submit' value='Send' />
             </div>
           </form>
         </div>
@@ -125,7 +153,7 @@ class Form extends Component {
 
 function mapStateToProps(state) {
   return {
-    backgroundColor: state.backgroundColor
+    backgroundColor: state.backgroundColor, linearGradient: state.linearGradient
   };
 }
 
