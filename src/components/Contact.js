@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import NavBar from './NavBar.js';
-import ContactForm from './ContactForm.js';
+import Form from './Contact/Form.js';
 import Footer from './Footer.js';
 
 class Contact extends Component {
@@ -30,7 +30,7 @@ class Contact extends Component {
     return (
         <Fragment>
         <NavBar/>
-        <ContactForm/>
+        <Form/>
         <Footer/>
       </Fragment>
     );

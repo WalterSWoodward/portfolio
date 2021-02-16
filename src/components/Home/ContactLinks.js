@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-class HomeContactLinks extends Component {
+class ContactLinks extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -108,4 +108,4 @@ class HomeContactLinks extends Component {
   }
 }
 
-export default HomeContactLinks;
+export default ContactLinks;

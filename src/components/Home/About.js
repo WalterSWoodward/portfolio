@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Link } from "react-router-dom";
 
-import HomeContactLinks from './HomeContactLinks';
+import ContactLinks from './ContactLinks';
 
-class HomeAbout extends React.PureComponent {
+class About extends React.PureComponent {
   render() {
     return (
       <Fragment>
@@ -25,7 +25,7 @@ class HomeAbout extends React.PureComponent {
                 >
                 CONTACT
                 </Link>
-                <HomeContactLinks/>
+                <ContactLinks/>
             </div>
         </div>
       </Fragment>
@@ -33,4 +33,4 @@ class HomeAbout extends React.PureComponent {
   }
 }
 
-export default HomeAbout;
+export default About;

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
-class ContactForm extends Component {
+class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -129,4 +129,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ContactForm);
+export default connect(mapStateToProps)(Form);

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 
 import NavBar from "./NavBar";
-import PortfolioCards from "./PortfolioCards";
+import PortfolioCards from "./Portfolio/Cards";
 import Footer from "./Footer";
 
 class Portfolio extends Component {
