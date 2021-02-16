@@ -1,11 +1,11 @@
-@keyframes textFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+// @keyframes textFadeIn {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
 
 .about {
   display: flex;
@@ -18,8 +18,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: $navbar-height + 40px;
-  animation-name: textFadeIn;
-  animation-duration: 4s;
+  // animation-name: textFadeIn;
+  // animation-duration: 4s;
   width: 100%;
   color: whitesmoke;
   height: 100vh;
