@@ -25,7 +25,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575260626/portfolio%20website/portfolio_cards/markdown_previewer_wst.png",
       alt: "markdown previewer screen shot",
       title: "Markdown Previewer",
-      languages: "React, Javascript, Netlify",
+      languages: "React, Javascript",
       text: "Instantly preview the output of your HTML markdown using this app! The second project I completed in FCC's Front End curriculum!",
       deploy_link: "https://awesome-stonebraker-052383.netlify.com/",
       deploy_link_icon: faLink,
@@ -37,7 +37,7 @@ const initialState = {
       alt_image_url: "https://res.cloudinary.com/pacmankana/image/upload/v1575339499/portfolio%20website/portfolio_cards/tesla_png.png",
       alt: "Tesla Making Lightening with his Tesla Coil",
       title: "Tesla Tribute Page",
-      languages: "Basic vanilla HTML and CSS",
+      languages: "HTML, CSS",
       text: "This was my first FCC project! Just a simple static page with some information on the famous inventor, Nikola Tesla.",
       deploy_link: "https://codepen.io/pacManKana/pen/oPabKx",
       deploy_link_icon: faCodepen
