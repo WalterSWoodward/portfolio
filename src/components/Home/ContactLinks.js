@@ -27,24 +27,6 @@ class ContactLinks extends Component {
     return (
         <Fragment>
             <div className='icon_links'>
-              {/* <a
-              id='icon_link_facebook'
-              className='icon_link'
-              href='https://www.facebook.com/WalterSWoodward'
-              target='_blank'
-              rel='noopener noreferrer'
-              name='facebook_icon_link'
-              aria-label="Click here to visit Walter's Facebook profile"
-              >
-              <FontAwesomeIcon
-                  icon={faFacebookF}
-                  aria-hidden='false'
-                  id='fa_facebook_icon'
-                  title="Link to Walter's Facebook Profile"
-                  role="img"
-                  aria-label="my-facebook-profile"
-              />
-              </a> */}
               <a
               id='icon_link_github'
               className='icon_link'
@@ -63,25 +45,6 @@ class ContactLinks extends Component {
                   aria-label="my-github-profile"
               />
               </a>
-
-              {/* <a
-              id='icon_link_twitter'
-              className='icon_link'
-              href='https://twitter.com/pacManKana'
-              target='_blank'
-              rel='noopener noreferrer'
-              name='twitter_icon_link'
-              aria-label="Click here to visit Walter's Twitter profile"
-              >
-              <FontAwesomeIcon
-                  icon={faTwitter}
-                  aria-hidden='false'
-                  id='fa_twitter_icon'
-                  title="Link to Walter's Twitter Profile"
-                  role="img"
-                  aria-label="my-twitter-profile"
-              />
-              </a> */}
             </div>
         </Fragment>     
     );
