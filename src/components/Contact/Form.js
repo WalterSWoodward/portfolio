@@ -122,7 +122,7 @@ class Form extends Component {
                   required
                 />
               </div>
-              <input id='contact_form_button' type='submit' value='Send' />
+              <button className="contact-form__button" type='submit'>Send</button>
             </div>
           </form>
         </div>
