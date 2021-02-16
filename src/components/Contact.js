@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import NavBar from './NavBar.js';
-import ContactLinks from './ContactLinks.js';
 import ContactForm from './ContactForm.js';
 
 class Contact extends Component {

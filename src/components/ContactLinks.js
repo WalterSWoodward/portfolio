@@ -1,9 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 class ContactLinks extends Component {
   constructor(props) {
@@ -27,7 +25,6 @@ class ContactLinks extends Component {
     e.preventDefault();
   }
   render() {
-    const { status } = this.state;
     return (
         <Fragment>
             <div className='icon_links'>
