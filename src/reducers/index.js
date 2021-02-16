@@ -10,22 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
-var sheet = (function() {
-	var style = document.createElement("style");
-	style.appendChild(document.createTextNode(""));
-	document.head.appendChild(style);
-	return style.sheet;
-})();
-
-function addCSSRule(sheet, selector, rules, index) {
-	if("insertRule" in sheet) {
-		sheet.insertRule(selector + "{" + rules + "}", index);
-	}
-	else if("addRule" in sheet) {
-		sheet.addRule(selector, rules, index);
-	}
-}
-
 const initialState = {
   projects: {
     "wizard": {
@@ -76,27 +60,42 @@ const initialState = {
   error: "default error message"
 };
 
+var sheet = (function() {
+	var style = document.createElement("style");
+	style.appendChild(document.createTextNode(""));
+	document.head.appendChild(style);
+	return style.sheet;
+})();
+
+function addCSSRule(sheet, selector, rules, index) {
+	if("insertRule" in sheet) {
+		sheet.insertRule(selector + "{" + rules + "}", index);
+	}
+	else if("addRule" in sheet) {
+		sheet.addRule(selector, rules, index);
+	}
+}
+
 export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_BACKGROUND:
       const HUE = Math.floor(Math.random() * 230);
       const SAT = 40;
       const LIGHT = 30;
-      let newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      let altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
-      let thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
-      let newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
-      let newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
+      var newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
+      var altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
+      var thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
+      var newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
+      var newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
       addCSSRule(sheet, '.splash', 'background: ' + newLinearGradient, 0);
-      console.log(sheet);
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
 
     case TOGGLE_DROP_DOWN:
       return { ...state, dropDownOpen: !state.dropDownOpen };
 
     case TOGGLE_OVERLAY:
-      let display = state.loadOverlay.display === 'block';
-      let newDisplay = '';
+      var display = state.loadOverlay.display === 'block';
+      var newDisplay = '';
       display ? newDisplay = 'none' : newDisplay = 'block';
       return {
         ...state,

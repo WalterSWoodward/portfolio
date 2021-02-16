@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: $navbar-height + 40px;
   animation-name: textFadeIn;
   animation-duration: 4s;
   width: 100%;
@@ -26,17 +26,17 @@
   height: 100vh;
 }
 
-.header__name {
+.body-content__name {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
 }
 
-.box1_description {
+.body-content__title {
   padding: 20px 0px;
 }
 
-.box1_link1, .box1_link2, .box1_link3 {
+.body-content__link {
   font-size: 1.5rem;
   font-weight: bold;
   height: 40px;
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 515px) {
-  .header__name {
+  .body-content__name {
     font-size: 2.7rem;
   }
   .box1_icon_text {

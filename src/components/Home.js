@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { toggleOverlay } from '../actions';
 
 import NavBar from './NavBar';
-import Footer from './Footer';
 
-class About extends React.PureComponent {
+class Home extends React.PureComponent {
   componentDidMount() {
     this.props.toggleOverlay();
   }
@@ -14,19 +13,18 @@ class About extends React.PureComponent {
     return (
       <Fragment>
         <div id='fade_wrapper'
-        className="about__wrap body__content"
-        style={{ background: this.props.linearGradient }}>
-          <div className='header__name'>WALTER WOODWARD</div>
-          <div className='box1_description'>FULL STACK WEB DEVELOPER</div>
+        className="body__content splash">
+          <div className='body-content__name'>WALTER WOODWARD</div>
+          <div className='body-content__title'>FULL STACK WEB DEVELOPER</div>
           <a
-            className='box1_link2'
+            className='body-content__link'
             href='/portfolio'
             aria-label="Click here to view Walter's current projects"
           >
             PORTFOLIO
           </a>
           <a
-            className='box1_link3'
+            className='body-content__link'
             href='/contact'
             aria-label="Click here to view Walter's Contact form"
           >
@@ -55,14 +53,11 @@ class About extends React.PureComponent {
 
 const mapStateToProps = state => {
   return {
-    backgroundColor: state.backgroundColor,
     loadOverlay: state.loadOverlay,
-    linearGradient: state.linearGradient,
-    darkerBackgroundColor: state.darkerBackgroundColor
   };
 };
 
 export default connect(
   mapStateToProps,
   { toggleOverlay }
-)(About);
+)(Home);
