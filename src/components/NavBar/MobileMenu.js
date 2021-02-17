@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
-import HamburgerMenu from './HamburgerMenu';
+import HamburgerMenu from './MobileMenu/HamburgerMenu';
 
 const bodyScrollLock = require('body-scroll-lock');
 
