@@ -13,7 +13,7 @@ class NavBar extends Component {
   render() {
     // Note: Both menus are always rendered. CSS Media Queries determine which of them is visible
     return (
-      <nav id='navigation' className='navbar__navbar'>
+      <nav className='navbar__wrap'>
         <DesktopMenu/>
         <MobileMenu/>
       </nav>

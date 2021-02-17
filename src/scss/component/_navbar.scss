@@ -1,37 +1,24 @@
-@keyframes fadeIn {
-  from {
-    background: none;
+@mixin slide-menu($duration) {
+  $name: #{"slide-menu-"}#{unique-id()};
+  @keyframes #{$name} {
+    @content;
   }
-  to {
-    background: rgba(0, 0, 0, 0.5);
-  }
+  animation-name: $name;
+  animation-duration: $duration;
 }
 
-@keyframes enterLeft {
-  from {
-    width: 0;
+@mixin fade-in($duration, $delay, $fillMode) {
+  $name: #{"fade-in-"}#{unique-id()};
+  @keyframes #{$name} {
+    @content;
   }
-  to {
-    width: 80%;
-  }
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-fill-mode: $fillMode;
 }
 
-a {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-.header {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar__navbar {
+.navbar__wrap {
   width: 50%;
   margin-right: 50%;
   display: flex;
@@ -50,12 +37,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-.desktop_view {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .navbar__link {
   text-align: center;
   margin: 5px 20px;
@@ -67,12 +48,12 @@ a:hover {
   }
 }
 
-.navbar_icon {
+.navbar__icon {
   font-size: $header1;
   padding: 5px 0px;
 }
 
-.icon_text {
+.icon__text {
   animation-name: textFadeIn;
   animation-duration: 1s;
 }
@@ -124,34 +105,28 @@ a:hover {
   height: 100%;
   width: 80%;
   padding: 100px 0px;
-  animation-name: enterLeft;
-  animation-duration: 0.5s;
-
-  // &> .navbar__link {
-  //   &:hover {
-  //     .icon_text {
-  //       border-bottom: 1px solid burlywood;
-  //     }
-  //     margin-bottom: 4px;
-  //   }
-  // }
+  @include slide-menu(0.5s) {
+    from { width: 0; }
+    to { width: 80%; }
+  }
 }
 
 .dropdown__space {
   height: 100%;
   width: 20%;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
+  @include fade-in(0.5s, 0.4s, forwards) {
+    from { background: none; }
+    to { background: rgba(0, 0, 0, 0.5); }
+  }
   background: none;
 }
 
 @media (max-width: $mobile) {
-  #navigation {
+  .navbar__wrap {
     justify-content: flex-start;
     width: 100%;
   }
+
   .mobile_view {
     display: flex;
     justify-content: center;
@@ -170,10 +145,8 @@ a:hover {
     font-size: $header5;
   }
 
-  .navbar_icon {
+  .navbar__icon {
     font-size: $header1;
   }
-  .desktop_view {
-    display: none;
-  }
+
 }

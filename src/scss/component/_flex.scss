@@ -39,10 +39,23 @@
   }
 }
 
+.flex__row--space-around {
+  display: none;
+}
+
 @media (min-width: $mobile) {
   .flex-column__content {
     justify-content: center;
     padding-top: 0px;
+  }
+
+  .flex__row {
+    display: flex;
+    flex-direction: row;
+    &--space-around {
+      @extend .flex__row;
+      justify-content: space-around;
+    }
   }
 
 }

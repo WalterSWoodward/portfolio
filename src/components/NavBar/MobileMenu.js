@@ -26,16 +26,16 @@ class MobileMenu extends Component {
             <div className={this.props.dropDownOpen === true ? 'dropdownOpen' : 'dropdownClosed'}>
                 <div className='dropdown__content' onClick={this.handleClick}>
                     <Link to='/' className='navbar__link splash__color' onClick={this.handleClick}>
-                        <FontAwesomeIcon icon={faHome} className='navbar_icon' aria-hidden='false'/>
-                        <div id='about-icon_text' className='icon_text'>Home</div>
+                        <FontAwesomeIcon icon={faHome} className='navbar__icon' aria-hidden='false'/>
+                        <div className='icon__text'>Home</div>
                     </Link>
                     <Link to='/portfolio' className='navbar__link splash__color' onClick={this.handleClick}>
-                        <FontAwesomeIcon icon={faBriefcase} className='navbar_icon' aria-hidden='false'/>
-                        <div className='icon_text'>Portfolio</div>
+                        <FontAwesomeIcon icon={faBriefcase} className='navbar__icon' aria-hidden='false'/>
+                        <div className='icon__text'>Portfolio</div>
                     </Link>
                     <Link to='/contact' className='navbar__link splash__color' onClick={this.handleClick}>
-                        <FontAwesomeIcon icon={faEnvelope} className='navbar_icon' aria-hidden='false'/>
-                        <div id='contact-icon_text' className='icon_text'>Contact</div>
+                        <FontAwesomeIcon icon={faEnvelope} className='navbar__icon' aria-hidden='false'/>
+                        <div className='icon__text'>Contact</div>
                     </Link>
                 </div>
                 <div className="dropdown__space" onClick={this.handleClick}></div>
