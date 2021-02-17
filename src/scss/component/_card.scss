@@ -19,7 +19,7 @@
 
 .card__languages {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: $header5;
+  font-size: $header4;
   font-weight: normal;
   margin-bottom: 5px;
   padding: 7px 0px;
@@ -27,6 +27,8 @@
 
 .card__description {
   margin-bottom: 10px;
+  font-size: $header5;
+  line-height: 1.6;
 }
 
 .card__button {
