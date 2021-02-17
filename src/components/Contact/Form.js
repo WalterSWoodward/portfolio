@@ -65,25 +65,9 @@ class Form extends Component {
           >
             <div className='contact_form splash__background--dark'>
               <div className='contact_form_top'>
-                <div
-                  id='contact_name_field'
-                  className='contact_label_container'
-                >
-                  <label
-                    htmlFor='contact_name_input'
-                    id='contact_label_name'
-                    className='contact_label'
-                  >
-                    Name
-                  </label>
-                  <input
-                    id='contact_name_input'
-                    type='text'
-                    name='name'
-                    className='contact_input_field'
-                    style={{ outlineColor: this.props.backgroundColor }}
-                    required
-                  />
+                <div id='contact_name_field' className='contact_label_container'>
+                  <label htmlFor='contact_name_input' id='contact_label_name' className='contact_label'>Name</label>
+                  <input id='contact_name_input' type='text' name='name' className='contact_input_field' style={{ outlineColor: this.props.backgroundColor }} required/>
                 </div>
                 <div
                   id='contact_email_field'

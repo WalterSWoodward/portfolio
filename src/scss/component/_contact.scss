@@ -11,8 +11,10 @@
 
 .contact_form {
   padding: $navbar-height 5% 0px 5%;
+  // padding: 0px 5%;
   display: flex;
   flex-direction: column;
+  // justify-content: center;
   color: whitesmoke;
   min-height: 100vh;
   font-size: $header5;

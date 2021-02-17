@@ -91,7 +91,11 @@ class NavBar extends Component {
       <nav id='navigation' className='navbar__navbar'>
         <div className='mobile_view' onClick={this.handleClick}>
           {this.hamburgerMenu()}
-          <div className={dropdown}>{this.renderMobileMenu()}</div>
+          <div className={dropdown}>
+            <div className='dropdown__content'>
+              {this.renderMobileMenu()}</div>
+              <div className="dropdown__space"></div>
+            </div>
         </div>
         <div className='desktop_view'>{this.renderDesktopMenu()}</div>
       </nav>

@@ -1,3 +1,21 @@
+@keyframes fadeIn {
+  from {
+    background: none;
+  }
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes enterLeft {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
 a {
   margin: 0px;
   padding: 0px;
@@ -55,8 +73,6 @@ a:hover {
 }
 
 .icon_text {
-  // Need this so there isn't a padding jolt when the text is inserted!!
-  // width: 80px;
   animation-name: textFadeIn;
   animation-duration: 1s;
 }
@@ -76,9 +92,9 @@ a:hover {
 }
 
 .bar {
-  width: 30px;
-  height: 4px;
-  margin: 6px 0;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
   background: whitesmoke;
 }
 
@@ -87,24 +103,51 @@ a:hover {
 }
 
 .dropdownOpen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   position: fixed;
+  display: flex;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: whitesmoke;
-  padding: 100px 0px;
+  opacity: 1;
   box-sizing: border-box;
+}
+
+.dropdown__content {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 80%;
+  padding: 100px 0px;
+  animation-name: enterLeft;
+  animation-duration: 0.5s;
+
+  // &> .navbar_link_button {
+  //   &:hover {
+  //     .icon_text {
+  //       border-bottom: 1px solid black;
+  //     }
+  //     margin-bottom: 4px;
+  //   }
+  // }
+}
+
+.dropdown__space {
+  height: 100%;
+  width: 20%;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  background: none;
 }
 
 @media (max-width: 600px) {
   #navigation {
-    display: flex;
     justify-content: flex-start;
     width: 100%;
   }
