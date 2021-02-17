@@ -1,66 +1,73 @@
-.contact-form__form {
+.form__form {
   border-radius: 5px;
 }
 
-.contact {
+.form__wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
 
-.contact_form {
+.form__body {
   padding: $navbar-height 5% 0px 5%;
-  // padding: 0px 5%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   color: whitesmoke;
   min-height: 100vh;
   font-size: $header5;
 }
 
-.contact_form_top {
+.form__group {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
-.contact_label {
+.form__label {
   margin-bottom: 10px;
-}
-
-#contact_name_field {
-  width: 30%;
-  min-width: 280px;
-  margin-right: 20px;
-}
-
-#contact_email_field {
-  width: 60%;
-  min-width: 280px;
 }
 
 .form__row {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  &:first-child {
+    margin-top: 0px;
+  }
+  &--name {
+    @extend .form__row;
+    width: 30%;
+    min-width: 280px;
+    margin-right: 20px;
+  }
+  &--email {
+    @extend .form__row;
+    width: 60%;
+    min-width: 280px;
+  }
 }
 
-.contact_input_field {
+.form__row + .form__row {
+  margin-top: 20px;
+}
+
+.form-row__input {
   background: rgba(255, 255, 255, 0.7);
   padding: 5px;
   border: none;
   outline-width: 2px;
   border-radius: $border-radius;
+  font-family: monospace; // I think it looks cool :/
+  &--textarea {
+    @extend .form-row__input;
+    height: 150px;
+    color: black;
+  }
 }
 
-#contact_text_input {
-  height: 150px;
-  color: black;
-}
-
-.contact-form__button {
+.form__button {
   align-self: flex-end;
   cursor: pointer;
   color: whitesmoke;
@@ -72,28 +79,18 @@
   border-radius: $border-radius;
 }
 
-#contact_form_button:hover {
+#form__body_button:hover {
   transition: 0.5s ease;
   background: whitesmoke;
   color: black;
 }
 
-@media(max-width: $tv){
-}
-
-@media(max-width: $ipad) {
-  .contact_form_top {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  .form__row + .form__row {
+@media (min-width: $mobile) {
+  .form__row:first-child {
     margin-top: 20px;
   }
-}
-
-@media(max-width: $mobile) {
-  .form__row:first-child {
-    margin-top: 0px;
+  .form__group {
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }

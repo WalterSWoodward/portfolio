@@ -56,36 +56,28 @@ class Form extends Component {
       
     return (
       <Fragment>
-        <div className='contact' name='contact'>
-          <form
-            onSubmit={this.submitForm}
-            className='contact-form__form'
-            action='https://formspree.io/f/mpzoozjo'
-            method="POST"
-          >
-            <div className='contact_form splash__background--dark'>
-              <div className='contact_form_top'>
-                <div id='contact_name_field' className='form__row'>
-                  <label htmlFor='contact_name_input' id='contact_label_name' className='contact_label'>Name</label>
-                  <input id='contact_name_input' type='text' name='name' className='contact_input_field' style={{ outlineColor: this.props.backgroundColor }} required/>
+        <div className='form__wrap' name='contact'>
+          <form className='form__form' onSubmit={this.submitForm} action='https://formspree.io/f/mpzoozjo' method="POST">
+            <div className='form__body splash__background--dark'>
+              <div className='form__group'>
+                <div className='form__row form__row--name'>
+                  <label htmlFor='form-row__input--name' className='form__label'>Name</label>
+                  <input id='form-row__input--name' type='text' name='name' className='form-row__input' style={{ outlineColor: this.props.backgroundColor }} placeholder='Type name here...' required/>
                 </div>
-                <div id='contact_email_field' className='form__row'>
-                  <label htmlFor='contact_email_input' id='contact_label_email' className='contact_label' >Email</label>
-                  <input id='contact_email_input' type='email' name='_replyto' className='contact_input_field' style={{ outlineColor: this.props.backgroundColor }} required/>
+                <div className='form__row form__row--email'>
+                  <label htmlFor='form-row__input--email' className='form__label' >Email</label>
+                  <input id='form-row__input--email' type='email' name='_replyto' className='form-row__input' style={{ outlineColor: this.props.backgroundColor }} placeholder='Type email here...' required/>
                 </div>
               </div>
               <div id='contact_text_field' className='form__row'>
-                <label className='contact_label' htmlFor='contact_text_input'>Message</label>
-                <textarea onChange={event => this.handleChange('message', event.target.value)}
-                  type='textarea'
-                  className='contact_input_field'
-                  id='contact_text_input'
-                  name='message'
-                  style={{ outlineColor: this.props.backgroundColor }}
+                <label className='form__label' htmlFor='contact_text_input'>Message</label>
+                <textarea className='form-row__input--textarea' onChange={event => this.handleChange('message', event.target.value)}
+                  type='textarea' name='message' style={{ outlineColor: this.props.backgroundColor }}
+                  placeholder="Type message here..."
                   required
                 />
               </div>
-              <button className="contact-form__button" type='submit'>Send</button>
+              <button className="form__button" type='submit'>Send</button>
             </div>
           </form>
         </div>
