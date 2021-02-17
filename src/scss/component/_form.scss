@@ -58,7 +58,7 @@
   padding: 5px;
   border: none;
   outline-width: 2px;
-  border-radius: $border-radius;
+  border-radius: $base__border-radius;
   font-family: monospace; // I think it looks cool :/
   &--textarea {
     @extend .form-row__input;
@@ -76,7 +76,7 @@
   margin-top: 20px;
   padding: 10px 20px;
   box-sizing: border-box;
-  border-radius: $border-radius;
+  border-radius: $base__border-radius;
 }
 
 #form__body_button:hover {

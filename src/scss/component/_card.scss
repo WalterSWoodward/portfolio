@@ -28,7 +28,7 @@
 .card__description {
   margin-bottom: 10px;
   font-size: $header5;
-  line-height: 1.6;
+  line-height: $base__line-height;
 }
 
 .card__button {

@@ -1,22 +1,22 @@
 .sweetalert__title {
     color: whitesmoke !important;
-    font-family: $base_font !important;
+    font-family: $base__font !important;
     font-weight: bold !important;
 }
 
 .sweetalert__content {
     color: whitesmoke !important;
     font-size: $header5 !important;
-    font-family: $base_font !important;
-    line-height: 1.6 !important;
+    font-family: $base__font !important;
+    line-height: $base__line-height !important;
 }
 
 .sweetalert__button {
-    font-family: $base_font !important;
+    font-family: $base__font !important;
     padding: 10px 20px;
     background: rgba(50,50,50, 0.7);
     color: whitesmoke;
-    border-radius: $border-radius;
+    border-radius: $base__border-radius;
     outline: none;
     border: none;
     cursor: pointer;
