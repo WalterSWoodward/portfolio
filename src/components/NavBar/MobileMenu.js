@@ -39,7 +39,7 @@ class MobileMenu extends Component {
                           <div>Contact</div>
                       </Link>
                   </div>
-                  <div className="dropdown__space" onClick={this.handleClick}></div>
+                  <div className="dropdown__overlay" onClick={this.handleClick}></div>
               </div>
             </div>
         </div>
