@@ -65,39 +65,18 @@ class Form extends Component {
           >
             <div className='contact_form splash__background--dark'>
               <div className='contact_form_top'>
-                <div id='contact_name_field' className='contact_label_container'>
+                <div id='contact_name_field' className='form__row'>
                   <label htmlFor='contact_name_input' id='contact_label_name' className='contact_label'>Name</label>
                   <input id='contact_name_input' type='text' name='name' className='contact_input_field' style={{ outlineColor: this.props.backgroundColor }} required/>
                 </div>
-                <div
-                  id='contact_email_field'
-                  className='contact_label_container'
-                >
-                  <label
-                    htmlFor='contact_email_input'
-                    id='contact_label_email'
-                    className='contact_label'
-                  >
-                    Email
-                  </label>
-                  <input
-                    id='contact_email_input'
-                    type='email'
-                    name='_replyto'
-                    className='contact_input_field'
-                    style={{ outlineColor: this.props.backgroundColor }}
-                    required
-                  />
+                <div id='contact_email_field' className='form__row'>
+                  <label htmlFor='contact_email_input' id='contact_label_email' className='contact_label' >Email</label>
+                  <input id='contact_email_input' type='email' name='_replyto' className='contact_input_field' style={{ outlineColor: this.props.backgroundColor }} required/>
                 </div>
               </div>
-              <div id='contact_text_field' className='contact_label_container'>
-                <label className='contact_label' htmlFor='contact_text_input'>
-                  Message
-                </label>
-                <textarea
-                  onChange={event =>
-                    this.handleChange('message', event.target.value)
-                  }
+              <div id='contact_text_field' className='form__row'>
+                <label className='contact_label' htmlFor='contact_text_input'>Message</label>
+                <textarea onChange={event => this.handleChange('message', event.target.value)}
                   type='textarea'
                   className='contact_input_field'
                   id='contact_text_input'

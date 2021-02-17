@@ -41,7 +41,7 @@
   min-width: 280px;
 }
 
-.contact_label_container {
+.form__row {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -78,8 +78,22 @@
   color: black;
 }
 
-@media(max-width: 1250px){
-  .contact-form__form {
-    border-radius: $border-radius;
+@media(max-width: $tv){
+}
+
+@media(max-width: $ipad) {
+  .contact_form_top {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .form__row + .form__row {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: $mobile) {
+  .form__row:first-child {
+    margin-top: 0px;
   }
 }

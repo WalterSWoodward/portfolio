@@ -5,12 +5,12 @@
   justify-content: center;
   width: 100%;
   color: whitesmoke;
-  padding-top: $navbar-height;
+  padding-top: $navbar-height - 10px;
   background: linear-gradient(30deg, lightgrey 5%, darkgrey 55%,grey 100%);
   min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $ipad) {
   .portfolio {
     flex-direction: column;
     justify-content: start;

@@ -147,7 +147,7 @@ a:hover {
   background: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile) {
   #navigation {
     justify-content: flex-start;
     width: 100%;

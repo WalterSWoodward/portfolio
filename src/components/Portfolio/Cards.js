@@ -6,26 +6,19 @@ class Cards extends Component {
   createCards = () => {
     let projects = this.props.projects;
     let cardsList = Object.keys(this.props.projects).map((card, index) => (
-      <div
-        className='cards_item'
-        key={index}
-      >
-        <div className='card_body'>
-          <div className="card-body__item">
-            <div className='card_title'>{projects[card].title}</div>
-            <div className='card_subtitle'>
-              <b>{projects[card].languages}</b>
-            </div>
-            <div className='card_text'>{projects[card].text}</div>
+      <div className='card__wrap' key={index}>
+          <div className='card__title'>{projects[card].title}</div>
+          <div className='card__languages'>
+            <b>{projects[card].languages}</b>
           </div>
-          <div className="card-body__item">
+          <div className='card__description'>{projects[card].text}</div>
+          <div className="card__row">
             <a
                 target='_blank'
                 rel='noopener noreferrer'
-                className='card_button'
-                id='card_button1'
                 href={projects[card].deploy_link}
-                aria-label='Click on this link to view the live deployment of this project'
+                className='card__button'
+                aria-label= {"Click on this link to view the live deployment of this project" + projects[card].title}
               >
                 <FontAwesomeIcon icon={projects[card].deploy_link_icon} aria-hidden="false" />
               </a>
@@ -33,8 +26,7 @@ class Cards extends Component {
                 <a
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='card_button'
-                  id='card_button2'
+                  className='card__button'
                   href={projects[card].code_link}
                   aria-label='Click on this link to view the code for this project.'
                 >
@@ -42,7 +34,6 @@ class Cards extends Component {
                 </a>
               ) : null}
           </div>
-        </div>
       </div>
     ));
     return cardsList;
