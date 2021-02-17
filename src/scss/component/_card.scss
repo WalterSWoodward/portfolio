@@ -48,15 +48,32 @@
 }
 
 @media (min-width: $mobile) {
-
-
+  .cards {
+    width: 90%;
+    margin: 0px 5%;
+  }
 }
 
 @media (min-width: $ipad) {
-  
+  .cards {
+    width: 80%;
+    margin: 0px 10%;
+  }
 }
 
 @media (min-width: $laptop) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    align-content: flex-start;
+    width: 90%;
+    margin: 0px 5%;
+  }
+
+  .card__wrap {
+    width: 350px;
+  }
   
 }
 
