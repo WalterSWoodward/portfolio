@@ -7,19 +7,19 @@ class About extends React.PureComponent {
   render() {
     return (
       <Fragment>
-        <div id='about' className='about'>
-            <div id='fade_wrapper' className="body__content splash__background">
-                <div className='body-content__name'>WALTER WOODWARD</div>
-                <div className='body-content__title'>FULL STACK WEB DEVELOPER</div>
+        <div className='flex__column'>
+            <div id='fade_wrapper' className="flex-column__content flex__column splash__background">
+                <div className='flex-column-content__name'>WALTER WOODWARD</div>
+                <div className='flex-column-content__title'>FULL STACK WEB DEVELOPER</div>
                 <Link
-                className='body-content__link'
+                className='flex-column-content__link'
                 to='/portfolio'
                 aria-label="Click here to view Walter's current projects"
                 >
                 PORTFOLIO
                 </Link>
                 <Link
-                className='body-content__link'
+                className='flex-column-content__link'
                 to='/contact'
                 aria-label="Click here to view Walter's Contact form"
                 >
