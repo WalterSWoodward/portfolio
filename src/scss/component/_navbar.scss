@@ -40,11 +40,16 @@
 .navbar__link {
   text-align: center;
   margin: 5px 20px;
-  color: white;
+  color: white; // override browser default
   &.active {
     padding-bottom: 2px;
     margin-bottom: 2px;
     border-bottom: 1px solid white;
+  }
+  &:hover {
+    &.active {
+      cursor: auto;
+    }
   }
 }
 
@@ -53,27 +58,22 @@
   padding: 5px 0px;
 }
 
-.icon__text {
-  animation-name: textFadeIn;
-  animation-duration: 1s;
-}
-
-.mobile_view {
+.mobile-menu__wrap {
   display: none;
 }
 
-.menu {
+.hamburger__menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
 
-.bars {
+.hamburger-menu__bars {
   text-align: center;
 }
 
-.bar {
+.hamburger-menu__bar {
   width: 25px;
   height: 3px;
   margin: 5px 0;
@@ -127,17 +127,18 @@
     width: 100%;
   }
 
-  .mobile_view {
+  .mobile-menu__wrap {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    height: 100%;
+    justify-content: flex-end;
     width: 100%;
-    padding: 0px 5%;
   }
 
-  .mobile_view_text {
+  .mobile-menu__menu {
+    width: 10%;
+    margin: 0px 5%;
+  }
+
+  .hamburger__text {
     font-size: $header5;
   }
 

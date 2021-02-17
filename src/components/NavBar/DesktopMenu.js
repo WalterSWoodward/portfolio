@@ -6,13 +6,13 @@ class DesktopMenu extends Component {
         return (
             <div className='flex__row--space-around'>
                 <NavLink to='/home' className='navbar__link' activeClassName="active">
-                    <div className='icon__text'>Home</div>
+                    <div className='navbar-link__text'>Home</div>
                 </NavLink>
                 <NavLink to='/portfolio' className='navbar__link' activeClassName="active">
-                    <div className='icon__text'>Portfolio</div>
+                    <div className='navbar-link__text'>Portfolio</div>
                 </NavLink>
                 <NavLink to='/contact' className='navbar__link' activeClassName="active">
-                    <div className='icon__text'>Contact</div>
+                    <div className='navbar-link__text'>Contact</div>
                 </NavLink>
             </div>
         );
