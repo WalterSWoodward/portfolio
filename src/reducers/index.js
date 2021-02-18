@@ -81,6 +81,7 @@ export const Reducer = (state = initialState, action) => {
       addCSSRule(sheet, '.splash__background', 'background: ' + newLinearGradient, 0);
       addCSSRule(sheet, '.splash__background--dark', 'background: ' + newLinearGradient, 0);
       addCSSRule(sheet, '.splash__color', 'color: ' + newColor, 0);
+      addCSSRule(sheet, '.splash__image-background', 'background-color: ' + newLinearGradient, 0);
 
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
 

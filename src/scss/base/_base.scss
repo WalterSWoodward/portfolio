@@ -1,11 +1,9 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
   html {
     font-size: 62.5%;
   }
 
   body {
-    max-width: 1250px;
+    max-width: $body__max-width;
     margin: 0px auto;
   }
 

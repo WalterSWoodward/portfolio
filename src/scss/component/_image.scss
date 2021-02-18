@@ -1,0 +1,11 @@
+.image {
+    // background-image: url('');
+    height: 200px;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    bottom: 0;
+    max-width: $body__max-width;
+}
