@@ -1,5 +1,6 @@
 // sass --watch ./src/scss/main.scss:./src/css/index.css --style compressed
 // Utils
+@import "utils/mixins";
 @import "utils/variables.scss";
 
 // Base
