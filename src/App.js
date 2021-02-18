@@ -4,12 +4,17 @@ import {
   Route,
   Switch
 } from "react-router-dom";
+import { connect } from 'react-redux';
+import { changeBackground } from './actions';
 
 import Home from "./components/Home.js";
 import Contact from "./components/Contact.js";
 import Portfolio from "./components/Portfolio.js";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.changeBackground();
+  }
   render() {
     return (
       <Router>
@@ -26,4 +31,11 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = () => {
+  return { };
+};
+
+export default connect(
+  mapStateToProps,
+  { changeBackground }
+)(App);

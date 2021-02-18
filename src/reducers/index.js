@@ -57,6 +57,7 @@ var sheet = (function() {
 	return style.sheet;
 })();
 
+// addCSSRule :: ()
 function addCSSRule(sheet, selector, rules, index) {
 	if("insertRule" in sheet) {
 		sheet.insertRule(selector + "{" + rules + "}", index);
@@ -78,10 +79,11 @@ export const Reducer = (state = initialState, action) => {
       var newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
       var newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
   
-      addCSSRule(sheet, '.splash__background', 'background: ' + newLinearGradient, 0);
-      addCSSRule(sheet, '.splash__background--dark', 'background: ' + newLinearGradient, 0);
+      // TODO: Fix !important here, which is a hack to override background in SweetAlert2 Popups
+      addCSSRule(sheet, '.splash__background', 'background: ' + newLinearGradient + '!important', 0);
       addCSSRule(sheet, '.splash__color', 'color: ' + newColor, 0);
       addCSSRule(sheet, '.splash__image-background', 'background-color: ' + newLinearGradient, 0);
+      addCSSRule(sheet, '.splash__outline-color', 'outline-color: ' + newColor, 0);
 
       return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
 

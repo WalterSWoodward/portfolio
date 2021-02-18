@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux';
 import Swal from 'sweetalert2';
 
 class Form extends Component {
@@ -32,11 +31,11 @@ class Form extends Component {
         customClass: {
           title: 'sweetalert__title',
           content: 'sweetalert__content',
-          confirmButton: 'sweetalert__button'
+          confirmButton: 'sweetalert__button',
+          popup: 'splash__background'
         },
         confirmButtonText: 'Close',
         buttonsStyling: false,
-        background: this.props.linearGradient
       });
 
       status === "ERROR" && Swal.fire({
@@ -46,11 +45,11 @@ class Form extends Component {
         customClass: {
           title: 'sweetalert__title',
           content: 'sweetalert__content',
-          confirmButton: 'sweetalert__button'
+          confirmButton: 'sweetalert__button',
+          popup: 'splash__background'
         },
         confirmButtonText: 'Close',
         buttonsStyling: false,
-        background: this.props.linearGradient
       });
 
       
@@ -58,21 +57,21 @@ class Form extends Component {
       <Fragment>
         <div className='form__wrap' name='contact'>
           <form className='form__form' onSubmit={this.submitForm} action='https://formspree.io/f/mpzoozjo' method="POST">
-            <div className='form__body splash__background--dark'>
+            <div className='form__body splash__background'>
               <div className='form__group'>
                 <div className='form__row form__row--name'>
                   <label htmlFor='form-row__input--name' className='form__label'>Name</label>
-                  <input id='form-row__input--name' type='text' name='name' className='form-row__input' style={{ outlineColor: this.props.backgroundColor }} placeholder='Type name here...' required/>
+                  <input id='form-row__input--name' type='text' name='name' className='form-row__input splash__outline-color' placeholder='Type name here...' required/>
                 </div>
                 <div className='form__row form__row--email'>
                   <label htmlFor='form-row__input--email' className='form__label' >Email</label>
-                  <input id='form-row__input--email' type='email' name='_replyto' className='form-row__input' style={{ outlineColor: this.props.backgroundColor }} placeholder='Type email here...' required/>
+                  <input id='form-row__input--email' type='email' name='_replyto' className='form-row__input splash__outline-color' placeholder='Type email here...' required/>
                 </div>
               </div>
               <div id='contact_text_field' className='form__row'>
                 <label className='form__label' htmlFor='contact_text_input'>Message</label>
-                <textarea className='form-row__input--textarea' onChange={event => this.handleChange('message', event.target.value)}
-                  type='textarea' name='message' style={{ outlineColor: this.props.backgroundColor }}
+                <textarea className='form-row__input--textarea splash__outline-color' onChange={event => this.handleChange('message', event.target.value)}
+                  type='textarea' name='message'
                   placeholder="Type message here..."
                   required
                 />
@@ -106,10 +105,4 @@ class Form extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    backgroundColor: state.backgroundColor, linearGradient: state.linearGradient
-  };
-}
-
-export default connect(mapStateToProps)(Form);
+export default Form;

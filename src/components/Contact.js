@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux';
 
 import NavBar from './NavBar.js';
 import Form from './Contact/Form.js';
@@ -56,8 +55,4 @@ class Contact extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { backgroundColor: state.backgroundColor, darkerBackgroundColor: state.darkerBackgroundColor };
-}
-
-export default connect(mapStateToProps)(Contact);
+export default Contact;

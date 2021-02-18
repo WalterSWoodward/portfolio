@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { changeBackground, toggleDropDown } from '../../actions';
+import { toggleDropDown } from '../../actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBriefcase, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -55,5 +55,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { changeBackground, toggleDropDown }
+  { toggleDropDown }
 )(MobileMenu);

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
 class Footer extends Component {
   render() {
@@ -11,8 +10,4 @@ class Footer extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return { backgroundColor: state.backgroundColor };
-};
-
-export default connect(mapStateToProps)(Footer);
+export default Footer;
