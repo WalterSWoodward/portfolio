@@ -10,6 +10,7 @@ import { changeBackground } from './actions';
 import Home from "./components/Home.js";
 import Contact from "./components/Contact.js";
 import Portfolio from "./components/Portfolio.js";
+import Sandbox from "./components/Sandbox.js";
 
 class App extends Component {
   componentDidMount() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/home" component={Home} exact/>
             <Route path="/contact" component={Contact} exact/>
             <Route path="/portfolio" component={Portfolio} exact/>
+            <Route path="/sandbox" component={Sandbox} exact/>
           </Switch>
         </Fragment>
       </Router>

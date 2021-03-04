@@ -1,0 +1,33 @@
+@use "sass:math";
+@use "sass:color";
+@mixin changehue ($hue, $index) {
+    @keyframes huechange {    
+        50% {
+            background: hsl($hue - 180, 50%, 70%);
+        }
+    }
+}
+
+.blocks {
+    width: 900px;
+    min-width: 30%;
+}
+.block {
+    background: black;
+    color: transparent;
+    text-align: center;
+    font-size: 0.1px;
+}
+
+$base-color: #036;
+
+@for $i from 1 through 100 {
+    .block:nth-child(#{$i}) {
+        background: hsl(math.sin($i) + $i % 360, 50%, 70%);
+        width: 100%;
+        height: 1vh;
+        @include changehue(math.sin($i) + $i % 360, $i);
+        animation: 5s linear infinite huechange;
+
+    }
+}
