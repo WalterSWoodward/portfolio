@@ -25,7 +25,7 @@ class App extends Component {
             <Route path="/home" component={Home} exact/>
             <Route path="/contact" component={Contact} exact/>
             <Route path="/portfolio" component={Portfolio} exact/>
-            <Route path="/sandbox" component={Sandbox} exact/>
+            {/* <Route path="/sandbox" component={Sandbox} exact/> */}
           </Switch>
         </Fragment>
       </Router>
