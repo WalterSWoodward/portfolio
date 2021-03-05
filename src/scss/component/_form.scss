@@ -59,7 +59,7 @@
   border: none;
   outline-width: 2px;
   border-radius: $base__border-radius;
-  font-family: monospace; // I think it looks cool :/
+  font-family: monospace;
   &--textarea {
     @extend .form-row__input;
     height: 150px;

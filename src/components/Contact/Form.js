@@ -85,7 +85,6 @@ class Form extends Component {
   }
 
   submitForm(ev) {
-    console.log('inside ');
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
