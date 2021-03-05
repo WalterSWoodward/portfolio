@@ -20,36 +20,3 @@
     animation-delay: $delay;
     animation-fill-mode: $fillMode;
 }
-
-// @mixin fade-in__color($color) {
-//     $name: #{"fade-in__color--"}#{unique-id()};
-//     @keyframes #{$name} {
-//         from { color: transparent; }
-//         to { color: $color; }
-//     }
-//     animation-name: $name;
-//     animation-duration: 2s;
-//     animation-fill-mode: forwards;
-// }
-
-// @mixin fade-in__background($background) {
-//     $name: #{"fade-in__background--"}#{unique-id()};
-//     @keyframes #{$name} {
-//         from { background: transparent; }
-//         to { background: $background; }
-//     }
-//     animation-name: $name;
-//     animation-duration: 2s;
-//     animation-fill-mode: forwards;
-// }
-
-// @mixin fade-in__border-bottom($borderBottom) {
-//     $name: #{"fade-in__background--"}#{unique-id()};
-//     @keyframes #{$name} {
-//         from { border-bottom: transparent; }
-//         to { border-bottom: $borderBottom; }
-//     }
-//     animation-name: $name;
-//     animation-duration: 2s;
-//     animation-fill-mode: forwards;
-// }
