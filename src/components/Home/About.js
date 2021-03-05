@@ -8,8 +8,8 @@ class About extends React.PureComponent {
     return (
       <Fragment>
         <div className='flex__column'>
-            <div className="image splash__image-background" />
-            <div id='fade_wrapper' className="flex-column__content flex__column splash__background">
+            <div className="image" />
+            <div id='fade_wrapper' className="flex-column__content flex__column">
                 <div className='flex-column-content__name'>WALTER WOODWARD</div>
                 <div className='flex-column-content__title'>FULL STACK WEB DEVELOPER</div>
                 <Link

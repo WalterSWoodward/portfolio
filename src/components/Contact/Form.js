@@ -56,20 +56,20 @@ class Form extends Component {
       <Fragment>
         <div className='form__wrap' name='contact'>
           <form className='form__form' onSubmit={this.submitForm} action='https://formspree.io/f/mpzoozjo' method="POST">
-            <div className='form__body splash__background'>
+            <div className='form__body'>
               <div className='form__group'>
                 <div className='form__row form__row--name'>
                   <label htmlFor='form-row__input--name' className='form__label'>Name</label>
-                  <input id='form-row__input--name' type='text' name='name' className='form-row__input splash__outline-color' placeholder='Type name here...' required/>
+                  <input id='form-row__input--name' type='text' name='name' className='form-row__input' placeholder='Type name here...' required/>
                 </div>
                 <div className='form__row form__row--email'>
                   <label htmlFor='form-row__input--email' className='form__label' >Email</label>
-                  <input id='form-row__input--email' type='email' name='_replyto' className='form-row__input splash__outline-color' placeholder='Type email here...' required/>
+                  <input id='form-row__input--email' type='email' name='_replyto' className='form-row__input' placeholder='Type email here...' required/>
                 </div>
               </div>
               <div id='contact_text_field' className='form__row'>
                 <label className='form__label' htmlFor='contact_text_input'>Message</label>
-                <textarea className='form-row__input--textarea splash__outline-color' onChange={event => this.handleChange('message', event.target.value)}
+                <textarea className='form-row__input--textarea' onChange={event => this.handleChange('message', event.target.value)}
                   type='textarea' name='message'
                   placeholder="Type message here..."
                   required
