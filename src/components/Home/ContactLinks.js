@@ -26,14 +26,14 @@ class ContactLinks extends Component {
   render() {
     return (
         <Fragment>
-            <div className='icon_links'>
+            <div className='icon__links'>
               <a
-              id='icon_link_github'
-              className='icon_link'
+              id='icon__link_github'
+              className='icon__link'
               href='https://github.com/WalterSWoodward'
               target='_blank'
               rel='noopener noreferrer'
-              name='github_icon_link'
+              name='github_icon__link'
               aria-label="Click here to visit Walter's Github profile"
               >
               <FontAwesomeIcon

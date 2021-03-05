@@ -1,19 +1,14 @@
 
-.icon_links {
+.icon__links {
   display: flex;
   justify-content: center;
   font-size: $header2;
 }
-.icon_link_container {
-  margin: 20px 0px 2px 0px;
-}
-.icon_link {
+
+.icon__link {
   margin: 0px 20px;
-  color: #EEE;
-  &:hover {
-    color: black;
-  }
 }
+
 .footer {
   font-size: $text1;
   text-align: center;
