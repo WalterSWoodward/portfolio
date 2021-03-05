@@ -1,6 +1,4 @@
 import {
-  ERROR,
-  CHANGE_BACKGROUND,
   TOGGLE_DROP_DOWN
 } from "../actions";
 import {
@@ -43,55 +41,14 @@ const initialState = {
       deploy_link_icon: faCodepen
     }
   },
-  backgroundColor: '',
-  linearGradient: '',
-  darkerBackgroundColor: '',
   dropDownOpen: false,
   error: "default error message"
 };
 
-var sheet = (function() {
-	var style = document.createElement("style");
-	style.appendChild(document.createTextNode(""));
-	document.head.appendChild(style);
-	return style.sheet;
-})();
-
-// addCSSRule :: ()
-function addCSSRule(sheet, selector, rules, index) {
-	if("insertRule" in sheet) {
-		sheet.insertRule(selector + "{" + rules + "}", index);
-	}
-	else if("addRule" in sheet) {
-		sheet.addRule(selector, rules, index);
-	}
-}
-
 export const Reducer = (state = initialState, action) => {
   switch (action.type) {
-    case CHANGE_BACKGROUND:
-      const HUE = Math.floor(Math.random() * 230);
-      const SAT = 40;
-      const LIGHT = 30;
-      var newColor = `hsl(${HUE}, ${SAT}%, ${LIGHT}%)`;
-      var altNewColor = `hsl(${HUE + 30}, ${SAT}%, ${LIGHT}%)`;
-      var thirdNewColor = `hsl(${HUE - 30}, ${SAT}%, ${LIGHT}%)`;
-      var newLinearGradient = 'linear-gradient(30deg, ' + altNewColor + ' 5%, ' + newColor + ' 55%,' + thirdNewColor + ' 100%)';
-      var newDarkerBackgroundColor = `hsl(${HUE}, 40%, 25%)`;
-  
-      // TODO: Fix !important here, which is a hack to override background in SweetAlert2 Popups
-      addCSSRule(sheet, '.splash__background', 'background: ' + newLinearGradient + '!important', 0);
-      addCSSRule(sheet, '.splash__color', 'color: ' + newColor, 0);
-      addCSSRule(sheet, '.splash__image-background', 'background-color: ' + newLinearGradient, 0);
-      addCSSRule(sheet, '.splash__outline-color', 'outline-color: ' + newColor, 0);
-
-      return { ...state, linearGradient: newLinearGradient, backgroundColor: newColor, darkerBackgroundColor: newDarkerBackgroundColor };
-
     case TOGGLE_DROP_DOWN:
       return { ...state, dropDownOpen: !state.dropDownOpen };
-
-    case ERROR:
-      return { ...state, error: action.errorMessage };
     default:
       return state;
   }

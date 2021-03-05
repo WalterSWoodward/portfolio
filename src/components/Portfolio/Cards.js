@@ -41,7 +41,7 @@ class Cards extends Component {
 
   render() {
     return (
-      <div id="portfolio" className="portfolio splash__background" name="portfolio">
+      <div id="portfolio" className="portfolio" name="portfolio">
         <div className='cards'>{this.createCards()}</div>
       </div>
     );

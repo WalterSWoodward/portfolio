@@ -1,18 +1,16 @@
-  html {
-    font-size: 62.5%;
-  }
-
   body {
     max-width: $body__max-width;
     margin: 0px auto;
+    background: black;
+    color: whitesmoke;
+    font-size: 16px;
   }
 
   #root {
     width: 100%;
     letter-spacing: 1.5px;
     font-family: $base__font;
-    background: whitesmoke;
-    color: black;
+    background: #555;
   }
 
   a {
@@ -25,5 +23,5 @@
   }
 
   ::placeholder {
-    color: #737373;
+    // color: ;
   }

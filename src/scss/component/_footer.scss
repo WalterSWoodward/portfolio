@@ -15,9 +15,10 @@
   }
 }
 .footer {
+  font-size: $text1;
   text-align: center;
   padding: 10px 10px 10px 10px;
-  color: rgba(255, 255 ,255 , 0.5);
+  color: rgb(#888,0.5);
   position: fixed;
   bottom: 0;
 }

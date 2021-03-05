@@ -13,13 +13,13 @@
 
 .card__title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: $header3;
+  font-size: $header6;
   padding: 5px 0px;
 }
 
 .card__languages {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: $header4;
+  font-size: $text1;
   font-weight: normal;
   margin-bottom: 5px;
   padding: 7px 0px;
@@ -27,21 +27,21 @@
 
 .card__description {
   margin-bottom: 10px;
-  font-size: $header5;
+  font-size: $text2;
   line-height: $base__line-height;
 }
 
 .card__button {
-  font-size: $header3;
+  font-size: $header5;
   background: transparent;
   border-radius: 2px;
   border: none;
-  color: white; // override browser defaults
+  color: #FFF; // override browser defaults
   padding: 0;
   &:hover{
     background: transparent;
     cursor: pointer;
-    color: black;
+    color: #000;
   }
 }
 

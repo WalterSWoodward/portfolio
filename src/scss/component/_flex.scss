@@ -18,12 +18,11 @@
 .flex-column-content__name {
   font-weight: bold;
   text-align: center;
-  font-size: $header1;
+  font-size: $header2;
 }
 
 .flex-column-content__title {
   padding: 20px 0px;
-  font-size: $header3;
   text-align: center;
 }
 
@@ -32,7 +31,6 @@
   padding-bottom: 5px;
   margin-bottom: 10px;
   color: whitesmoke;
-  font-size: $header5;
   &:hover {
     border-bottom: 2px solid whitesmoke;
     margin-bottom: 8px;
