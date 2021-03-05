@@ -12,13 +12,13 @@
 }
 
 .card__title {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #888;
   font-size: $header6;
   padding: 5px 0px;
 }
 
 .card__languages {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #888;
   font-size: $text1;
   font-weight: normal;
   margin-bottom: 5px;
@@ -36,13 +36,7 @@
   background: transparent;
   border-radius: 2px;
   border: none;
-  color: #FFF; // override browser defaults
   padding: 0;
-  &:hover{
-    background: transparent;
-    cursor: pointer;
-    color: #000;
-  }
 }
 
 .card__button + .card__button {

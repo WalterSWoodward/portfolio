@@ -21,7 +21,7 @@
     border-color: #EEE;
     &:hover {
         text-decoration: none;
-        color:darkturquoise;
+        @include random-color('color');
     }
   }
 

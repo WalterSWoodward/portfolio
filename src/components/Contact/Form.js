@@ -24,6 +24,7 @@ class Form extends Component {
   }
   render() {
     const { status } = this.state;
+
     status === "SUCCESS" && Swal.fire({
         title: 'Message sent',
         icon: 'success',
@@ -31,22 +32,20 @@ class Form extends Component {
         customClass: {
           title: 'sweetalert__title',
           content: 'sweetalert__content',
-          confirmButton: 'sweetalert__button',
-          popup: 'splash__background'
+          confirmButton: 'sweetalert__button'
         },
         confirmButtonText: 'Close',
         buttonsStyling: false,
       });
 
-      status === "ERROR" && Swal.fire({
+    status === "ERROR" && Swal.fire({
         title: 'Error!',
         icon: 'error',
         text: 'Oops! We could not process your request. Please try again later. Thank You!',
         customClass: {
           title: 'sweetalert__title',
           content: 'sweetalert__content',
-          confirmButton: 'sweetalert__button',
-          popup: 'splash__background'
+          confirmButton: 'sweetalert__button'
         },
         confirmButtonText: 'Close',
         buttonsStyling: false,

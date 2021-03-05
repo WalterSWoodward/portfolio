@@ -75,12 +75,9 @@
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: $base__border-radius;
-}
-
-#form__body_button:hover {
-  transition: 0.5s ease;
-  background: #EEE;
-  color: black;
+  &:hover {
+      @include random-color('background');
+  }
 }
 
 @media (min-width: $mobile) {

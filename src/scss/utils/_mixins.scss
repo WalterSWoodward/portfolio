@@ -1,3 +1,8 @@
+@use "sass:math";
+@mixin random-color($selector) {
+    #{$selector}: unquote("hsl(#{math.random() * 360}, 50%, 60%)");
+}
+
 @mixin transition($name, $duration) {
     $uid-name: #{$name}#{unique-id()};
     @keyframes #{$uid-name} {
