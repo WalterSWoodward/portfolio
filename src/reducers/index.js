@@ -41,8 +41,7 @@ const initialState = {
       deploy_link_icon: faCodepen
     }
   },
-  dropDownOpen: false,
-  error: "default error message"
+  dropDownOpen: false
 };
 
 export const Reducer = (state = initialState, action) => {

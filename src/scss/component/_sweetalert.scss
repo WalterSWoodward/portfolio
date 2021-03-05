@@ -1,11 +1,11 @@
 .sweetalert__title {
-    color: whitesmoke !important;
+    color: #EEE !important;
     font-family: $base__font !important;
     font-weight: bold !important;
 }
 
 .sweetalert__content {
-    color: whitesmoke !important;
+    color: #EEE !important;
     font-size: $header5 !important;
     font-family: $base__font !important;
     line-height: $base__line-height !important;
@@ -14,15 +14,15 @@
 .sweetalert__button {
     font-family: $base__font !important;
     padding: 10px 20px;
-    background: rgba(50,50,50, 0.7);
-    color: whitesmoke;
+    background: rgba(#323232, 0.7);
+    color: #EEE;
     border-radius: $base__border-radius;
     outline: none;
     border: none;
     cursor: pointer;
     content: "HI";
     &:hover {
-        background: whitesmoke;
+        background: #EEE;
         color: black;
     }
 }

@@ -13,7 +13,7 @@
   padding: $navbar-height 5% 0px 5%;
   display: flex;
   flex-direction: column;
-  color: whitesmoke;
+  color: #EEE;
   min-height: 100vh;
   font-size: $header5;
 }
@@ -27,6 +27,7 @@
 
 .form__label {
   margin-bottom: 10px;
+  font-size: $text1;
 }
 
 .form__row {
@@ -78,7 +79,7 @@
 
 #form__body_button:hover {
   transition: 0.5s ease;
-  background: whitesmoke;
+  background: #EEE;
   color: black;
 }
 

@@ -7,9 +7,8 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  color: whitesmoke;
+  color: #EEE;
   height: $navbar-height;
-  font-size: $header6;
   transition: top 0.5s;
   max-width: 1250px;
   font-family: "Montserrat", sans-serif;
@@ -20,11 +19,10 @@
 .navbar__link {
   text-align: center;
   margin: 5px 20px;
-  color: white; // override browser default
   &.active {
     padding-bottom: 2px;
     margin-bottom: 2px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #EEE;
   }
   &:hover {
     &.active {
@@ -34,7 +32,6 @@
 }
 
 .navbar__icon {
-  font-size: $header1;
   padding: 5px 0px;
 }
 
@@ -57,7 +54,7 @@
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background: whitesmoke;
+  background: #EEE;
 }
 
 .dropdownClosed {
@@ -85,7 +82,7 @@
   height: 100%;
   width: 80%;
   padding: 100px 0px;
-  @include slide-menu(0.5s) {
+  @include transition("slide-menu-", 0.5s) {
     from { width: 0; }
     to { width: 80%; }
   }
@@ -119,14 +116,14 @@
   }
 
   .hamburger__text {
-    font-size: $header5;
+    font-size: $text1;
   }
 
   .navbar__link {
-    font-size: $header5;
+    font-size: $text1;
   }
 
   .navbar__icon {
-    font-size: $header1;
+    font-size: $header2;
   }
 }

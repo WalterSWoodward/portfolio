@@ -1,10 +1,13 @@
-@mixin slide-menu($duration) {
-    $name: #{"slide-menu-"}#{unique-id()};
-    @keyframes #{$name} {
+@mixin transition($name, $duration) {
+    $uid-name: #{$name}#{unique-id()};
+    @keyframes #{$uid-name} {
         @content;
     }
-    animation-name: $name;
+    animation-name: $uid-name;
     animation-duration: $duration;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
 }
   
 @mixin fade-in($duration, $delay, $fillMode) {
