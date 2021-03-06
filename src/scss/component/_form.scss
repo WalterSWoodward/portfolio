@@ -13,7 +13,6 @@
   padding: $navbar-height 5% 0px 5%;
   display: flex;
   flex-direction: column;
-  color: #EEE;
   min-height: 100vh;
   font-size: $header5;
 }
@@ -76,7 +75,7 @@
   box-sizing: border-box;
   border-radius: $base__border-radius;
   &:hover {
-      @include random-color('background');
+      background: $primary__color;
   }
 }
 

@@ -1,5 +1,5 @@
 .navbar__wrap {
-  width: 50%;
+  width: 100%;
   margin-right: 50%;
   display: flex;
   justify-content: space-between;
@@ -7,13 +7,13 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  color: #EEE;
   height: $navbar-height;
   transition: top 0.5s;
   max-width: 1250px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   box-sizing: border-box;
+  background: $primary__color;
 }
 
 .navbar__link {
@@ -54,7 +54,7 @@
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background: #EEE;
+  background: $secondary__color;
 }
 
 .dropdownClosed {
