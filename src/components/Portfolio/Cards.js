@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ToolIcons from './ToolIcons.js';
-import { faUikit } from '@fortawesome/free-brands-svg-icons';
-import { faCogs, faDesktop, faServer, faDatabase } from '@fortawesome/free-solid-svg-icons';
+// import {  } from '@fortawesome/free-brands-svg-icons';
+import { faDesktop, faServer, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 class Cards extends Component {
     createCards = () => {
