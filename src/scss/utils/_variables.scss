@@ -6,12 +6,10 @@ $base__line-height: 1.6;
 $base__border-radius: 5px;
 $navbar-height: 60px;
 $body__max-width: 1250px;
-// $primary__color: hsl(math.floor(math.random() * 360), 35%, 75%);
-$primary__color: #a9d6c8;
-// $secondary__color: color.adjust($primary__color, $hue: 30, $saturation: -20, $lightness: -30);
-$secondary__color: #627d84;
-// $highlight__color: color.adjust($primary__color, $hue: 30, $saturation: 40, $lightness: 10);
-$highlight__color: #e56de5;
+$primary__color: hsl(math.floor(math.random() * 360), 35%, 65%);
+$secondary__color: color.adjust($primary__color, $hue: 30, $saturation: -20, $lightness: -30);
+$tertiary__color: color.adjust($primary__color, $hue: -30, $saturation: -20, $lightness: -30);
+$highlight__color: color.adjust($primary__color, $hue: 60, $saturation: 40, $lightness: 20);
 
 // Typography
 $header1: 40px;

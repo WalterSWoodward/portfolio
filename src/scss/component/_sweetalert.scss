@@ -15,9 +15,11 @@
     border-radius: $base__border-radius;
     outline: none;
     border: none;
+    background: $secondary__color;
     cursor: pointer;
+    color: #eee;
     &:hover {
-        background: $primary__color;
+        background: rgb($secondary__color, 0.8);
         color: #EEE;
     }
 }
