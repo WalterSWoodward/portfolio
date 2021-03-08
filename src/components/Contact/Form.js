@@ -25,7 +25,7 @@ class Form extends Component {
   render() {
     const { status } = this.state;
 
-    Swal.fire({
+    status === "SUCCESS" && Swal.fire({
         title: 'Message sent',
         icon: 'success',
         text: 'Thank You for reaching out! I will respond to your email within 24 hours.',

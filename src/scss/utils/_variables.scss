@@ -9,7 +9,7 @@ $body__max-width: 1250px;
 $primary__color: hsl(math.floor(math.random() * 360), 35%, 65%);
 $secondary__color: color.adjust($primary__color, $hue: 30, $saturation: -20, $lightness: -30);
 $tertiary__color: color.adjust($primary__color, $hue: -30, $saturation: -20, $lightness: -30);
-$highlight__color: color.adjust($primary__color, $hue: 60, $saturation: 40, $lightness: 20);
+$highlight__color: color.adjust($primary__color, $hue: 60, $saturation: 40, $lightness: 30);
 
 // Typography
 $header1: 40px;
